@@ -1,0 +1,7 @@
+{
+  "langClass": "zh-style",
+  "hello": {
+    "world": "測試",
+    "img": "../images/en/test.png"
+  }
+}

@@ -1,14 +1,299 @@
-$red: #f00
+@import ./_base
+@import ./_variable
+
 
 *
-  padding: 0
-  margin: 0px
+	padding: 0
+	margin: 0
+	font-family: 'Noto Sans TC', sans-serif
 
-p
-  color: #f00
+img
+	width: 100%
+	vertical-align: top
 
-.zh-style
-  color: #aaf
+html
+	font-size: 20px
+	padding-top: 98px
 
-.en-style
-  color: #afa
+header
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 50
+	width: 100%
+	border-bottom: 8px solid $blue001
+	background-color: $gray003
+	.wrapper
+		max-width: 1350px
+		padding: 0 15px
+		margin: auto
+		font-size: 0
+		.nanya-logo
+			+dib
+			figure.pic
+				width: 230px
+		.main
+			width: calc(100% - 390px)
+			+dib
+			ul.main-menu
+				list-style: none
+				text-align: center
+				li.main-item
+					padding: 32.5px 20px
+					position: relative
+					+dib
+					.main-a
+						font-size: 0.9rem
+						font-weight: bold
+						color: $gray001
+						text-decoration: none
+						cursor: pointer
+					+hover
+						ul.sub-menu
+							opacity: 1
+							pointer-events: auto
+					ul.sub-menu
+						width: 416px
+						background-color: $blue001
+						position: absolute
+						bottom: 0
+						left: 0
+						transform: translateY(100%)
+						opacity: 0
+						pointer-events: none
+						transition: .3s
+						li.sub-item
+							position: relative
+							z-index: 2
+							+dib
+							a.sub-a
+								padding: 8px 20px
+								font-size: 0.8rem
+								color: $white001
+								text-decoration: none
+								display: block
+						+before
+							width: 200vw
+							height: 100%
+							background-color: $blue001
+							z-index: 1
+							+pstc5
+			.mobile-lang
+				display: none
+		.lang
+			width: 160px
+			position: relative
+			cursor: pointer
+			+dib
+			+hover
+				.sub-menu
+					opacity: 1
+					pointer-events: auto
+			.svg-box
+				width: 17px
+				fill: $gray002
+				+dib
+			p
+				font-size: 0.8rem
+				padding-left: 10px
+				color: $gray002
+				+dib
+			.sub-menu
+				background-color: $gray003
+				width: 100px
+				padding: 10px 0
+				text-align: left
+				position: absolute
+				z-index: 10
+				bottom: 0px
+				right: 0px
+				transform: translateY(100%)
+				opacity: 0
+				pointer-events: none
+				transition: .3s
+				.sub-item
+					width: 100%
+					display: inline-block
+					.sub-a
+						width: 100%
+						padding: 10px 10px
+						box-sizing: border-box
+						text-align: left
+						background-color: $gray003
+						display: inline-block
+						text-decoration: none
+						vertical-align: middle
+						font-size: 0.8rem
+						color: $gray002
+						text-align: center
+						transition: .3s
+		.ham
+			.line
+	+rwd(1080px)
+		// border-bottom: 8px solid $blue001
+		.wrapper
+			// padding: 0 15px
+			.nanya-logo
+				figure.pic
+					width: 145px
+			.main
+				width: calc(100% - 290px)
+				ul.main-menu
+					li.main-item
+						padding: 34px 6px
+						.main-a
+							font-size: 0.8rem
+						ul.sub-menu
+							width: 273px
+							li.sub-item
+								a.sub-a
+									padding: 8px 6px
+									font-size: 0.7rem
+			.lang
+				width: 145px
+				.svg-box
+					// width: 17px
+				p
+					font-size: 0.7rem
+					// padding-left: 10px
+				.sub-menu
+					// padding: 10px 0
+					.sub-item
+						.sub-a
+							// padding: 10px 10px
+							font-size: 0.7rem
+			.ham
+				.line
+	+rwd(768px)
+		border-bottom: 4px solid $blue001
+		.wrapper
+			// padding: 0 15px
+			.nanya-logo
+				height: 70px
+				position: relative
+				figure.pic
+					width: 145px
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+			.main
+				display: none
+				width: 100vw
+				height: 100vh
+				padding-top: 70px
+				box-sizing: border-box
+				background-color: #fff
+				position: absolute
+				top: 0
+				left: 0
+				z-index: 1
+				+before
+					width: 100%
+					height: 4px
+					background-color: $blue001
+				.close
+					width: 50px
+					height: 50px
+					position: absolute
+					top: 10px
+					right: 10px
+					transform: rotateZ(45deg)
+					cursor: pointer
+					&:before,&:after
+						content: ''
+						display: block
+						border-radius: 2px
+						background-color: #999
+						+pstc0
+					&:before
+						width: 30px
+						height: 4px
+					&:after
+						width: 4px
+						height: 30px
+				ul.main-menu
+					width: 72%
+					padding-top: 30px
+					margin: auto
+					text-align: left
+					li.main-item
+						display: block
+						padding: 0px
+						border-bottom: 1px solid $blue001
+						.main-a
+							display: block
+							padding: 10px 5px
+							font-size: 0.9rem
+						&:nth-child(3)
+							.main-a
+								+before
+									width: 8px
+									height: 10px
+									background: url('../images/nacmenu-link.svg') right top no-repeat
+									background-size: 6.5px 30px
+									transform: rotate(90deg)
+									position: absolute
+									top: 0
+									bottom: 0
+									right: 0
+									margin: auto
+						ul.sub-menu
+							display: none
+							opacity: 1
+							width: 100%
+							position: static
+							transform: none
+							background-color: $white001
+							border-top: 4px solid $blue001
+							&:before
+								display: none
+							li.sub-item
+								display: block
+								a.sub-a
+									padding: 5px
+									font-size: 0.9rem
+									color: $gray001
+				.mobile-lang
+					width: 72%
+					margin: auto
+					padding-top: 10px
+					display: block
+					position: relative
+					.svg-box
+						width: 17px
+						fill: $gray002
+						+dib
+					p
+						font-size: 0.9rem
+						padding-left: 10px
+						color: $gray002
+						+dib
+					.sub-menu
+						display: none
+						margin-left: 5rem
+						.sub-item
+							.sub-a
+								padding: 10px 0
+								font-size: 0.8rem
+								color: $gray002
+			.lang
+				display: none
+			.ham
+				width: 20px
+				height: 70px
+				cursor: pointer
+				float: right
+				position: relative
+				.line
+					background-color: $gray004
+					height: 3px
+					border-radius: 1.5px
+					+pstc0
+					&:nth-child(1)
+						width: 18px
+						transform: translate(-1px,-5px)
+					&:nth-child(2)
+						width: 20px
+					&:nth-child(3)
+						width: 16px
+						transform: translate(-2px,5px)

@@ -33,7 +33,7 @@ gulp.task("pugI18n", function () {
   var i18nOptions = {
     i18n: {
       dest: "dist",
-      locales: "locales/*.*", // 語系檔位置
+      locales: "source/locales/*.*", // 語系檔位置
       namespace: "$t", // 前綴，預設為$i18n
       localeExtension: false, // 編譯後資料夾格式，false為依照資料夾，true為xxx.en.html
     },
@@ -156,7 +156,7 @@ gulp.task("vendorJs", function () {
 
 gulp.task("image-min", function () {
   return gulp
-    .src("./source/images/*")
+    .src("./source/images/**/*")
     .pipe($.if(options.env === "production", $.imagemin()))
     .pipe(
       $.if(

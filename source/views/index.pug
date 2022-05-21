@@ -1,14 +1,17 @@
 extend ../Layout.pug
 
 block header
-  include ../components/Header.pug
+  //- include ../components/Header.pug
 
 block footer
-  include ../components/Footer.pug
+  //- include ../components/Footer.pug
+
+block css
+  //- link(rel="stylesheet", href="../css/home.css")
 
 block body
   article
-    h2 #{$t.hello.world}!
-    img(src="../images/test.png")
+    h2 home
+    img(src=`../images/${$t.lang}/test.png`, alt="")
   
 

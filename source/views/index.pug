@@ -7,11 +7,29 @@ block footer
   //- include ../components/Footer.pug
 
 block css
-  //- link(rel="stylesheet", href="../css/home.css")
+  link(rel="stylesheet", href="../css/home.css")
+
+block js
+  script.
+    home();
 
 block body
   article
-    h2 home
-    img(src=`../images/${$t.lang}/test.png`, alt="")
+    .banner.slider
+      figure.banner-item
+        img(src=`../images/${$t.lang}/home_banner_d_01.jpg`)
+        img(src=`../images/${$t.lang}/home_banner_m_01.jpg`)
+      figure.banner-item
+        img(src=`../images/${$t.lang}/home_banner_d_02.jpg`)
+        img(src=`../images/${$t.lang}/home_banner_m_02.jpg`)
+      figure.banner-item
+        img(src=`../images/${$t.lang}/home_banner_d_03.jpg`)
+        img(src=`../images/${$t.lang}/home_banner_m_03.jpg`)
+      figure.banner-item
+        img(src=`../images/${$t.lang}/home_banner_d_04.jpg`)
+        img(src=`../images/${$t.lang}/home_banner_m_04.jpg`)
+      
+
+
   
 

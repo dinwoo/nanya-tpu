@@ -1,4 +1,32 @@
-@import './_variable'
+@import ./_base
+@import ./_variable
 
-p
-  color: $red
+.slick-dots
+  bottom: 10px
+  li
+    margin: 0
+    button:before
+      font-size: 15px
+      color: $white002
+      opacity: 1
+    &.slick-active
+      button:before
+        color: $blue001
+
+article
+  .banner.slider
+    margin-bottom: 0
+    figure.banner-item
+      img
+        &:nth-child(1)
+          display: block
+        &:nth-child(2)
+          display: none
+  +rwd(768px)
+    .banner.slider
+      figure.banner-item
+        img
+          &:nth-child(1)
+            display: none
+          &:nth-child(2)
+            display: block

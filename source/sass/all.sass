@@ -11,6 +11,9 @@ img
 	width: 100%
 	vertical-align: top
 
+a
+	text-decoration: none
+
 html
 	font-size: 20px
 	padding-top: 98px
@@ -46,7 +49,6 @@ header
 						font-size: 0.9rem
 						font-weight: bold
 						color: $gray001
-						text-decoration: none
 						cursor: pointer
 					+hover
 						ul.sub-menu
@@ -70,7 +72,6 @@ header
 								padding: 8px 20px
 								font-size: 0.8rem
 								color: $white001
-								text-decoration: none
 								display: block
 						+before
 							width: 200vw
@@ -121,7 +122,6 @@ header
 						text-align: left
 						background-color: $gray003
 						display: inline-block
-						text-decoration: none
 						vertical-align: middle
 						font-size: 0.8rem
 						color: $gray002
@@ -182,7 +182,7 @@ header
 				height: 100vh
 				padding-top: 70px
 				box-sizing: border-box
-				background-color: #fff
+				background-color: $white001
 				position: absolute
 				top: 0
 				left: 0
@@ -203,7 +203,7 @@ header
 						content: ''
 						display: block
 						border-radius: 2px
-						background-color: #999
+						background-color: $gray004
 						+pstc0
 					&:before
 						width: 30px
@@ -297,3 +297,257 @@ header
 					&:nth-child(3)
 						width: 16px
 						transform: translate(-2px,5px)
+
+
+footer
+	.main-footer
+		padding: 70px 0
+		background-color: $gray003
+		.wrapper
+			font-size: 0
+			max-width: 1360px
+			margin: auto
+			padding: 0 20px
+			box-sizing: border-box
+			.content
+				width: 25%
+				box-sizing: border-box
+				margin-bottom: 30px
+				padding-right: 30px
+				display: inline-block
+				vertical-align: top
+				text-align: left
+				&.global
+				&.product
+				&.info
+					width: 27%
+				&.company
+					width: 23%
+					padding-right: 0
+				.title
+					color: $gray001
+					font-size: 1rem
+					font-weight: 500
+					padding-bottom: 10px
+					margin-bottom: 10px
+					border-bottom: 1px solid $gray004
+					position: relative
+					&:before
+						content: ''
+						display: block
+						width: 85px
+						height: 4px
+						background-image: linear-gradient(15deg,#3574b5 0%,#2189f4 100%)
+						position: absolute
+						bottom: -2px
+						left: 0
+				&:nth-child(1)
+					.title
+						&:before
+							content: ''
+							display: block
+							width: 135px
+				&:nth-child(4)
+					.title
+						width: 100%
+
+				a.map
+					display: block
+					padding-top: 30px
+					.pic
+						fill: $gray004
+				.link-box
+					font-size: 0
+					padding-top: 7px
+					.item
+						width: 100%
+						font-size: 0.8rem
+						color: $gray001
+						padding: 7px 10px 7px 0
+						display: inline-block
+						vertical-align: middle
+						box-sizing: border-box
+
+				.info-box
+					padding-top: 7px
+					a.item
+						display: block
+						width: 100%
+						padding: 7px 0
+						.icon
+							width: 15px
+							height: 15px
+							padding-left: 4px
+							display: inline-block
+							vertical-align: top
+							fill: $gray001
+						.txt
+							width: calc( 100% - 30px )
+							padding-left: 10px
+							font-size: 0.8rem
+							color: $gray001
+							display: inline-block
+							vertical-align: top
+
+				.company-box
+					padding-top: 6px
+					font-size: 0
+					text-align: left
+					a.item
+						// margin-top: 6px
+						// width: 79px
+						width: calc((100% - 16px)/4)
+						padding: 6px 0
+						background-color: $white001
+						border: 1px solid $gray004
+						display: inline-block
+						box-sizing: border-box
+						border-radius: 5px
+						overflow: hidden
+						vertical-align: top
+						margin-left: 3px
+						&:nth-child(4n+1)
+							margin-left: 0
+						&:nth-child(4n)
+							// margin-top: -5px
+							margin-bottom: 0
+							margin-left: 8px
+							padding: 0
+							background-color: rgba($white001,0)
+							border: none
+						figure.company
+							// width: 47px
+							width: 60%
+							margin: auto
+						&:nth-child(1)
+							padding: 0
+							figure.company
+								width: 100%
+						figure.QRCode
+							width: 50px
+							margin: auto
+						.name
+							font-size: 0.6rem
+							color: $gray001
+							text-align: center
+							padding-top: 5px
+							letter-spacing: -1px
+	.sub-footer
+		background-color: $blue001
+		.wrapper
+			max-width: 1360px
+			margin: auto
+			padding: 0 20px
+			box-sizing: border-box
+			margin: auto
+			.box
+				font-size: 0.75rem
+				padding: 20px 0 15px
+				+clearfix
+				.copyright
+					color: $white001
+					// float: left
+					width: 100%
+					text-align: center
+					line-height: 1.3
+				.txt
+					color: $white001
+					line-height: 1.3
+				& + .box
+					border-top: 1px solid $white001
+					padding: 15px 0 20px
+
+	// @include rwd(1280px)
+	// 	.main-footer
+	// 		// padding: 70px 0
+	// 		.wrapper
+	// 			width: 620px
+	// 			.content
+	// 				width: 50%
+	// @include rwd(1120px)
+	// 	.sub-footer
+	// 		.wrapper
+	// 			width: 900px
+	@include rwd(960px)
+		.main-footer
+			.wrapper
+				max-width: 590px
+				.content
+					width: 50%
+					margin-bottom: 15px
+					vertical-align: top
+					&.info,&.company
+						width: 50%
+		.sub-footer
+			.wrapper
+				max-width: 590px
+				.box
+					.copyright
+						float: none
+						margin-bottom: 20px
+						text-align: center
+					.right_content
+						float: none
+						text-align: center
+	@include rwd(640px)
+		.main-footer
+			// padding: 70px 0
+			.wrapper
+				width: 350px
+				padding: 0 15px
+				.content
+					width: 100%
+					padding-right: 0
+					&.global
+						width: 100%
+					&.product
+						width: 100%
+					&.info
+						width: 100%
+					&.company
+						width: 100%
+					.title
+						width: 100%
+					a.map
+						.pic
+							width: 100%
+					.company-box
+						a.item
+							// width: 100px
+					&:nth-child(4)
+						.title
+							width: 100%
+		.sub-footer
+			.wrapper
+				width: 320px
+				.box
+					// .copyright
+					.right_content
+						.link-box
+							a.item
+								margin: 0 5px
+						.len
+							display: none
+	@include rwd(374px)
+		.main-footer
+			// padding: 70px 0
+			.wrapper
+				width: 100%
+				padding: 0 10px
+				.content
+					.company-box
+						a.item
+							// width: 100px
+							.name
+								letter-spacing: -2px
+		.sub-footer
+			.wrapper
+				width: 270px
+				.box
+					// .copyright
+					.right_content
+						.link-box
+							a.item
+								margin: 0 4px
+						.len
+							display: none

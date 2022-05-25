@@ -15,7 +15,7 @@ block js
 
 block body
   article
-    .banner.slider
+    section.banner.slider
       figure.banner-item
         img(src=`../images/${$t.lang}/home_banner_d_01.jpg`)
         img(src=`../images/${$t.lang}/home_banner_m_01.jpg`)
@@ -28,8 +28,144 @@ block body
       figure.banner-item
         img(src=`../images/${$t.lang}/home_banner_d_04.jpg`)
         img(src=`../images/${$t.lang}/home_banner_m_04.jpg`)
-      
+    section.application
+      .wrapper
+        h2 #{$t.home.application.title}
+        .box
+          each item, index in $t.home.application.item
+            a.item(href="") 
+              .info
+                figure.pic
+                  img(src=`../images/home_application_0${index+1}.jpg`)
+                .mask
+                  .txt
+                    each txt in item.txt
+                      p= txt
+              .name= item.name
+    section.product
+      .wrapper
+        h2 #{$t.home.product.title}
+        .container
+          .product-main-carousel
+            .product
+              .item
+                iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_01.jpg`)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_02.jpg`)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_03.jpg`)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_04.jpg`)
+            .product
+              .item
+                iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_01.jpg`)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_02.jpg`)
+            .product
+              .item
+                figure.pic
+                  img(src=`../images/home_application_03.jpg`)
+            .product
+              .item
+                figure.pic
+          .dot-box
+            .pre-btn#product-pre
+            .product-dot-carousel
+              .product
+                .item
+                  iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_01.jpg`)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_02.jpg`)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_03.jpg`)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_04.jpg`)
+              .product
+                .item
+                  iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_01.jpg`)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_02.jpg`)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_03.jpg`)
+              .product
+                .item
+                  figure.pic
+                    img(src=`../images/home_application_04.jpg`)
+            .next-btn#product-next
+    section.case
+      .wrapper
+        h2 #{$t.home.case.title}
+        .container
+          //- each item, index in $t.home.application.item
+          .item
+            .left
+              .name 減壓氣墊
+              .txt 南亞膠皮可承受持續性充洩氣循環不漏氣，為產品提供有效交替減壓效果
+              .more-btn 了解更多
+              figure.sub-pic
+                img(src=`../images/home_case_05.png`)
+            .right
+              figure.pic
+                img(src=`../images/home_case_01.jpg`)
+              .more-btn 了解更多
+          .item
+            .left
+              .name TPU洗浴床
+              .txt 優異耐水洗特性、獨特止滑紋路與親膚材質
+              .more-btn 了解更多
+            .right
+              figure.pic
+                img(src=`../images/home_case_02.jpg`)
+          .item.sub-item
+            .left
+              .name 流行搭配與易加工首選
+              .txt 高低溫膜複合材擁有與布熱壓易加工、視覺簡約流行輕量化
+              .more >>了解更多
+            .right
+              figure.pic
+                img(src=`../images/home_case_03.jpg`)
+          .item.sub-item
+            .left
+              .name 移床布
+              .txt 特殊塗層與TPU淋膜，提升滑感移動及易清潔
+              .more >>了解更多
+            .right
+              figure.pic
+                img(src=`../images/home_case_04.jpg`)
 
 
-  
 

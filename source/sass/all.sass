@@ -18,7 +18,26 @@ html
 	font-size: 20px
 	padding-top: 98px
 	+rwd(768px)
+		font-size: 16px
 		padding-top: 74px
+	
+h2
+	font-size: 1.5rem
+	font-weight: normal
+	letter-spacing: 1.5px
+	color: $blue002
+	text-align: center
+	+rwd(768px)
+		font-size: 1rem
+
+.wrapper
+	width: 100%
+	max-width: 1230px
+	padding: 0 15px
+	margin: auto
+	box-sizing: border-box
+	+rwd(768px)
+		padding: 0 30px
 
 header
 	position: fixed
@@ -225,7 +244,7 @@ header
 						.main-a
 							display: block
 							padding: 10px 5px
-							font-size: 0.9rem
+							font-size: 1.125rem
 						&:nth-child(3)
 							.main-a
 								+before
@@ -253,7 +272,7 @@ header
 								display: block
 								a.sub-a
 									padding: 5px
-									font-size: 0.9rem
+									font-size: 1.125rem
 									color: $gray001
 				.mobile-lang
 					width: 72%
@@ -266,7 +285,7 @@ header
 						fill: $gray002
 						+dib
 					p
-						font-size: 0.9rem
+						font-size: 1.125rem
 						padding-left: 10px
 						color: $gray002
 						+dib
@@ -276,7 +295,7 @@ header
 						.sub-item
 							.sub-a
 								padding: 10px 0
-								font-size: 0.8rem
+								font-size: 1rem
 								color: $gray002
 			.lang
 				display: none
@@ -516,6 +535,8 @@ footer
 					.company-box
 						a.item
 							// width: 100px
+							.name
+								font-size: 0.75rem
 					&:nth-child(4)
 						.title
 							width: 100%

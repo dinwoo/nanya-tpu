@@ -4,7 +4,7 @@ html(lang=$t.htmlLang)
     include partials/Meta.pug
     include partials/CssLink.pug
     block css
-  body(class=$t.langClass)
+  body(class=$t.lang+"-style")
     include components/Header.pug
     block header
     block body

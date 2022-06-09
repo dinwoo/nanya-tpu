@@ -1,0 +1,53 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/case.css")
+
+block js
+  script.
+    //- caseFn();
+
+block body
+  article#case
+    section.banner
+    section
+      .wrapper
+        h2 高週波加工
+        .container
+          .txt 無毒無額外添加，南亞純TPU，高週波醫療用的安心首選，抗張與充氣強度剛性佳，為各式醫療充氣產品與戶外氣墊產品及休閒複合與防水產品，提供可靠、簡約、模組化量產最佳選擇。
+          figure.pic
+            img(src=`../images/case_pic_01.jpg`)
+          .content
+            .sub-title 目前已應用於
+            .box
+              .item | 醫療床管條
+              .item | 按摩復健氣囊
+              .item | 鞋材
+              .item | 血壓脈袋
+              .item | 防水包
+    section
+      .wrapper
+        h2 熱壓加工
+        figure.big-pic
+          img(src=`../images/case_pic_02.jpg`)
+    section
+      .wrapper
+        h2 印刷加工
+        .container
+          .txt 透過壓紋轉寫，可為印刷層提供保護防止磨耗掉及視覺多層次呈現，如縱橫印刷紋紡碳纖編織、光柵紋，並以背面平紋印刷確保印刷色牢度與解析度。
+          figure.pic
+            img(src=`../images/case_pic_03.jpg`)
+          .content
+            .sub-title 目前已應用於
+            .box
+              .item | 軌道車輛地板
+              .item | 穿戴載體
+              .item | 衣用洗標
+
+

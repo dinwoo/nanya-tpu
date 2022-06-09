@@ -1,0 +1,127 @@
+@import ./_base
+@import ./_variable
+
+
+article#contact
+  section.banner
+    background-image: url(../images/product_banner.jpg)
+    .content
+      width: 100%
+      max-width: 950px
+      padding: 0 15px 30px
+      color: $white001
+      text-align: left
+      box-sizing: border-box
+      +pstc5
+      .slogan
+        font-size: 3rem
+    +rwd(768px)
+      .content
+        padding: 0
+        text-align: center
+        .slogan
+          font-size: 1.625rem
+  section.information
+    .wrapper
+      .info-box
+        padding: 30px 0
+        font-size: 0
+        .info-item
+          width: calc(100% / 3)
+          display: inline-block
+          vertical-align: top
+          .title
+            padding: 30px 0
+            font-size: 1.5rem
+            color: $blue002
+            text-align: center
+          figure.pic
+            width: 100%
+          .content
+            width: 100%
+            padding: 30px 20px
+            box-sizing: border-box
+            +clearfix
+            .txt
+              font-size: 0.9rem
+              line-height: 1.5rem
+            .btn
+              font-size: 0.9rem
+              color: $blue002
+              display: inline-block
+              cursor: pointer
+              float: right
+          &:nth-child(1)
+    +rwd(768px)
+      .wrapper
+        .info-box
+          padding: 15px 0
+          .info-item
+            width: 50%
+            .title
+              padding: 15px 0
+              font-size: 1rem
+            figure.pic
+            .content
+              padding: 15px 10px
+              .txt
+                font-size: 0.75rem
+                line-height: 1rem
+              .btn
+                font-size: 0.75rem
+            &:nth-child(1)
+              width: 100%
+              .title
+                width: 50%
+              figure.pic
+                width: 50%
+                display: inline-block
+                vertical-align: top
+              .content
+                width: 50%
+                padding: 0 10px
+                display: inline-block
+                vertical-align: top
+                .txt
+                .btn
+  section.certification
+    padding: 60px 0
+    .wrapper
+      h2
+        padding: 30px 0
+      .txt
+        padding: 0 80px 40px
+        font-size: 0.9rem
+      .certification-box
+        font-size: 0
+        text-align: center
+        .item
+          width: calc(100% / 3)
+          padding: 0 40px
+          margin: 15px 0
+          box-sizing: border-box
+          display: inline-block
+          vertical-align: top
+          figure.pic
+            box-shadow: 0px 0px 13px rgba($gray002,.3)
+          .name
+            padding: 20px 0
+            font-size: 1.2rem
+            color: $blue002
+    +rwd(768px)
+      padding: 30px 0
+      .wrapper
+        h2
+          padding: 15px 0
+        .txt
+          padding: 0 0px 20px
+          font-size: 0.75rem
+        .certification-box
+          .item
+            width: 50%
+            padding: 0 10px
+            // margin: 15px 0
+            figure.pic
+            .name
+              padding: 10px 0
+              font-size: 1rem

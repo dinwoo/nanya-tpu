@@ -1,0 +1,69 @@
+@import ./_base
+@import ./_variable
+
+
+article#case
+  section.banner
+    background-image: url(../images/case_banner.jpg)
+  section
+    padding: 60px 0
+    &:nth-child(3)
+      background-color: $blue003
+    .wrapper
+      h2
+        padding: 30px 0
+      figure.big-pic
+        width: 100%
+      .container
+        width: calc(100% - 470px)
+        padding-right: 40px
+        box-sizing: border-box
+        position: relative
+        font-size: 0
+        .txt
+          font-size: 1.2rem
+        figure.pic
+          width: 470px
+          position: absolute
+          top: 0
+          right: 0
+          transform: translate(100%)
+        .content
+          padding: 80px 0
+          color: $blue002
+          .sub-title
+            width: 180px
+            font-size: 1.2rem
+            +dib
+          .box
+            width: calc(100% - 180px)
+            font-size: 0
+            +dib
+            .item
+              width: calc(100% / 3)
+              font-size: 1.2rem
+              +dib
+    +rwd(768px)
+      padding: 30px 0
+      .wrapper
+        h2
+          padding: 15px 0
+        .container
+          width: 100%
+          padding-right: 0px
+          .txt
+            font-size: 0.75rem
+          figure.pic
+            width: 100%
+            margin: 15px 0
+            position: static
+            transform: translate(0%)
+          .content
+            padding: 0
+            .sub-title
+              width: 80px
+              font-size: 0.75rem
+            .box
+              width: calc(100% - 80px)
+              .item
+                font-size: 0.75rem

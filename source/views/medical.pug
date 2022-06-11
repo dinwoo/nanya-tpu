@@ -1,0 +1,114 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/application.css")
+
+block js
+  script.
+    application();
+
+block body
+  article#medical
+    section.banner(style='background-image: url(../images/medical_banner.jpg)')
+      .content
+        .slogan 醫療整合解決方案
+    section.carousel
+      .wrapper
+        h2 醫療輔器
+        .category 交替TPU管條
+        .category-btn
+        .container
+          .category-box
+            .category-item 交替TPU管條1
+            .category-item 交替TPU管條2
+            .category-item 交替TPU管條3
+            .category-item 交替TPU管條4
+            .category-item 交替TPU管條5
+            .category-item 交替TPU管條6
+          .carousel-box
+            .category-carousel.carousel-01.active
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_03.jpg`)
+                .next-btn.next-btn
+            .category-carousel.carousel-02
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_03.jpg`)
+                .next-btn.next-btn
+    section.feature
+      .wrapper
+        h2 產品特色
+        .box
+          .item
+            .title ・TPU膜壓紋絕佳親膚感
+            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
+          .item
+            .title ・TPU膜壓紋絕佳親膚感
+            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
+          .item
+            .title ・TPU膜壓紋絕佳親膚感
+            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
+          .item
+            .title ・TPU膜壓紋絕佳親膚感
+            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
+
+
+
+

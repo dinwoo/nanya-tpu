@@ -1,0 +1,140 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/application.css")
+
+block js
+  script.
+    application();
+
+block body
+  article#medical
+    section.banner(style='background-image: url(../images/outdoor_banner.jpg)')
+      .content
+        .slogan 戶外休閒
+    section.carousel
+      .wrapper
+        h2 醫療輔器
+        .category 交替TPU管條
+        .category-btn
+        .container
+          .category-box
+            .category-item outdoor1
+            .category-item outdoor2
+            .category-item outdoor3
+            .category-item outdoor4
+            .category-item outdoor5
+            .category-item outdoor6
+          .carousel-box
+            .category-carousel.carousel-01.active
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_03.jpg`)
+                .next-btn.next-btn
+            .category-carousel.carousel-02
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_03.jpg`)
+                .next-btn.next-btn
+            .category-carousel.carousel-03
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_03.jpg`)
+                .next-btn.next-btn
+    section.feature
+      .wrapper
+        h2 產品特色
+        .box
+          .item
+            .txt.dot ・各式布料淋膜搭配，提升耐刮磨，不穿透不穿破，戶外運動絕佳防護
+          .item
+            .txt.dot ・發泡材料強化吸震與耐衝擊，耐寒耐熱優於一般塑料，有效提升產品壽命
+          .item
+            .txt.dot ・適用高週波、熱壓等加工，無車縫兼具視覺簡約美觀與防水特性
+          .item
+            .txt.dot ・手感軟硬度、機能性壓紋、特殊設計等均能 從材料端直接配合開發
+
+
+
+

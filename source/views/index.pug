@@ -16,18 +16,10 @@ block js
 block body
   article
     section.home-banner.slider
-      figure.banner-item
-        img(src=`../images/${$t.lang}/home_banner_d_01.jpg`)
-        img(src=`../images/${$t.lang}/home_banner_m_01.jpg`)
-      figure.banner-item
-        img(src=`../images/${$t.lang}/home_banner_d_02.jpg`)
-        img(src=`../images/${$t.lang}/home_banner_m_02.jpg`)
-      figure.banner-item
-        img(src=`../images/${$t.lang}/home_banner_d_03.jpg`)
-        img(src=`../images/${$t.lang}/home_banner_m_03.jpg`)
-      figure.banner-item
-        img(src=`../images/${$t.lang}/home_banner_d_04.jpg`)
-        img(src=`../images/${$t.lang}/home_banner_m_04.jpg`)
+      - for (var i = 1; i <= 4; i++)
+        figure.banner-item
+          img(src=`../images/${$t.lang}/home_banner_d_0${i}.jpg`)
+          img(src=`../images/${$t.lang}/home_banner_m_0${i}.jpg`)
     section.application
       .wrapper
         h2 #{$t.home.application.title}
@@ -49,82 +41,29 @@ block body
           .main-carousel.product-main-carousel
             .carousel-item
               .item
-                iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                iframe(src="https://www.youtube.com/embed/Nat3CtxBNDY" allowfullscreen)
             .carousel-item
               .item
-                figure.pic
-                  img(src=`../images/home_application_01.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_02.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_03.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_04.jpg`)
-            .carousel-item
-              .item
-                iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_01.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_02.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_03.jpg`)
-            .carousel-item
-              .item
-                figure.pic
+                iframe(src="https://www.youtube.com/embed/jeN8gZGarBU" allowfullscreen)
+            - for (var i = 1; i <= 4; i++)
+              .carousel-item
+                .item
+                  figure.pic
+                    img(src=`../images/${$t.lang}/home_product_0${i}.jpg`)
           .dot-box
             .pre-btn#product-pre
             .dot-carousel.product-dot-carousel
               .carousel-item
                 .item
-                  iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                  iframe(src="https://www.youtube.com/embed/Nat3CtxBNDY" allowfullscreen)
               .carousel-item
                 .item
-                  figure.pic
-                    img(src=`../images/home_application_01.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_02.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_03.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_04.jpg`)
-              .carousel-item
-                .item
-                  iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_01.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_02.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_03.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_04.jpg`)
+                  iframe(src="https://www.youtube.com/embed/jeN8gZGarBU" allowfullscreen)
+              - for (var i = 1; i <= 4; i++)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/${$t.lang}/home_product_0${i}.jpg`)
             .next-btn#product-next
     section.case
       .wrapper

@@ -27,7 +27,7 @@ block body
               img(src="../images/product_pic_01.jpg", alt="")
             .content
               .txt 為TPU複合材及展現機能性提供最佳化解決方案,並可依照應用需求、加工需求，搭配專業的量身訂製建議，讓您迅速開發出理想產品、付諸實踐!
-              .btn >>查看規格表
+              #specification-btn.btn >>查看規格表
           .info-item
             .title 創新研發
             figure.pic
@@ -46,84 +46,19 @@ block body
         .txt 多樣複合的技術工藝，為您提供視覺多元層次的獨家壓紋選擇，機能耐候及多樣手感的體質呈現，南亞一站式解決方案完美達成，讓您輕鬆便捷即時取得。
         .container
           .main-carousel.product-main-carousel
-            .carousel-item
-              .item
-                iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_01.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_02.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_03.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_04.jpg`)
-            .carousel-item
-              .item
-                iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_01.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_02.jpg`)
-            .carousel-item
-              .item
-                figure.pic
-                  img(src=`../images/home_application_03.jpg`)
-            .carousel-item
-              .item
-                figure.pic
+            - for (var i = 1; i <= 7; i++)
+              .carousel-item
+                .item
+                  figure.pic
+                    img(src=`../images/PI_combination_application_0${i}.jpg`)
           .dot-box
             .pre-btn#product-pre
             .dot-carousel.product-dot-carousel
-              .carousel-item
-                .item
-                  iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_01.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_02.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_03.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_04.jpg`)
-              .carousel-item
-                .item
-                  iframe(src="https://www.youtube.com/embed/zPupYkCIMBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_01.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_02.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_03.jpg`)
-              .carousel-item
-                .item
-                  figure.pic
-                    img(src=`../images/home_application_04.jpg`)
+              - for (var i = 1; i <= 7; i++)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_0${i}.jpg`)
             .next-btn#product-next
 
     section.certification
@@ -131,24 +66,44 @@ block body
         h2 品質保證
         .txt 南亞品質，經的起您的驗證，通過生物相容、刺激過敏、細胞毒等測試，是讓您安心採購的可靠選擇，為持續保有品牌領導地位，我們持續致力於醫療、戶外、複合等全面性認證取得，歡迎您的詢問與建議
         .certification-box
-          .item
-            figure.pic
-              img(src=`../images/product_certification_01.jpg`)
-            .name 生物刺激過敏報告
-          .item
-            figure.pic
-              img(src=`../images/product_certification_02.jpg`)
-            .name 蘇州大學生物相容性
-          .item
-            figure.pic
-              img(src=`../images/product_certification_03.jpg`)
-            .name 生物相容細胞毒性
-          .item
-            figure.pic
-              img(src=`../images/product_certification_04.jpg`)
-            .name FDA 報告-TPU膠皮
-          .item
-            figure.pic
-              img(src=`../images/product_certification_05.jpg`)
-            .name ITS防霉報告- ASTM G21
+          - var list = ["生物刺激過敏報告", "蘇州大學生物相容性", "生物相容細胞毒性","FDA 報告-TPU膠皮", "ITS防霉報告- ASTM G21"]
+          each item,index in list
+            .item
+              figure.pic
+                img(src=`../images/product_certification_0${index+1}.jpg`)
+              .name= item
+      
+    section#specification-popup.popup
+      .container
+        .mask
+        figure.pic
+          img(src=`../images/product_specification.jpg`)
+
+    section#certification-popup
+      .container
+        .mask
+        .carousel-box
+          .main
+            .main-carousel.popup-main-carousel
+              - for (var i = 1; i <= 5; i++)
+                .carousel-item(data-index=i)
+                  .item
+                    figure.pic
+                      img(src=`../images/product_certification_0${i}.jpg`)
+            .dot-box
+              .pre-btn#popup-pre
+              .dot-carousel.popup-dot-carousel
+                - var list = ["生物刺激過敏報告", "蘇州大學生物相容性", "生物相容細胞毒性","FDA 報告-TPU膠皮", "ITS防霉報告- ASTM G21"]
+                each item in list
+                  .carousel-item
+                    .item 
+                      .certification-name= item
+              .next-btn#popup-next
+          .pic-box
+            - for (var i = 1; i <= 5; i++)
+              .item.active(data-index=i)
+                figure.pic
+                  img(src=`../images/product_certification_0${i}.jpg`)
+
+
 

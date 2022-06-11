@@ -1,0 +1,140 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/application.css")
+
+block js
+  script.
+    application();
+
+block body
+  article#medical
+    section.banner(style='background-image: url(../images/functional_banner.jpg)')
+      .content
+        .slogan 機能應用
+    section.carousel
+      .wrapper
+        h2 醫療輔器
+        .category 交替TPU管條
+        .category-btn
+        .container
+          .category-box
+            .category-item outdoor1
+            .category-item outdoor2
+            .category-item outdoor3
+            .category-item outdoor4
+            .category-item outdoor5
+            .category-item outdoor6
+          .carousel-box
+            .category-carousel.carousel-01.active
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/home_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/home_application_03.jpg`)
+                .next-btn.next-btn
+            .category-carousel.carousel-02
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_03.jpg`)
+                .next-btn.next-btn
+            .category-carousel.carousel-03
+              .main-carousel.medical-main-carousel
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_01.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_02.jpg`)
+                .carousel-item
+                  .item
+                    figure.pic
+                      img(src=`../images/PI_combination_application_03.jpg`)
+              .dot-box
+                .pre-btn.pre-btn
+                .dot-carousel.medical-dot-carousel
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_01.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_02.jpg`)
+                  .carousel-item
+                    .item
+                      figure.pic
+                        img(src=`../images/PI_combination_application_03.jpg`)
+                .next-btn.next-btn
+    section.feature
+      .wrapper
+        h2 產品特色
+        .box
+          .item
+            .txt.dot ・無毒無味，可耐油，無任何塑化劑、溶劑等添加物，適用於食品接觸FDA等級薄膜
+          .item
+            .txt.dot ・南亞獨特輪具壓紋印刷，同時可在印刷與耐刮面層提供機能與視覺美觀性
+          .item
+            .txt.dot ・為應用提供耐刮磨、防穿透、抗撕裂與加工性解決方案資選
+          .item
+            .txt.dot ・可與熱熔膠複合，將具機能性TPU膠布透過熱熔膠與各式材料貼合
+
+
+
+

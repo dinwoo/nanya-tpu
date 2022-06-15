@@ -61,9 +61,7 @@ block body
                   iframe(src="https://www.youtube.com/embed/jeN8gZGarBU" allowfullscreen)
               - for (var i = 1; i <= 4; i++)
                 .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/${$t.lang}/home_product_0${i}.jpg`)
+                  .pic(style=`background-image:url('../images/${$t.lang}/home_product_0${i}.jpg')`)
             .next-btn#product-next
     section.case
       .wrapper

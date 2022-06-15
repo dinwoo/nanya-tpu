@@ -14,114 +14,40 @@ block js
     application();
 
 block body
-  article#medical
+  article
     section.banner(style='background-image: url(../images/outdoor_banner.jpg)')
       .content
         .slogan 戶外休閒
     section.carousel
       .wrapper
-        h2 醫療輔器
-        .category 交替TPU管條
+        h2 戶外休閒
+        .category 高週波防水袋
         .category-btn
         .container
           .category-box
-            .category-item outdoor1
-            .category-item outdoor2
-            .category-item outdoor3
-            .category-item outdoor4
-            .category-item outdoor5
-            .category-item outdoor6
+            .category-item 高週波防水袋
+            .category-item 戶外休閒
+            .category-item 自行車旅行袋
+            .category-item 拳擊水袋
+            .category-item TPU耐磨充氣
+            .category-item 高週波用
           .carousel-box
-            .category-carousel.carousel-01.active
-              .main-carousel.medical-main-carousel
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/home_application_01.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/home_application_02.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/home_application_03.jpg`)
-              .dot-box
-                .pre-btn.pre-btn
-                .dot-carousel.medical-dot-carousel
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/home_application_01.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/home_application_02.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/home_application_03.jpg`)
-                .next-btn.next-btn
-            .category-carousel.carousel-02
-              .main-carousel.medical-main-carousel
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_01.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_02.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_03.jpg`)
-              .dot-box
-                .pre-btn.pre-btn
-                .dot-carousel.medical-dot-carousel
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_01.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_02.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_03.jpg`)
-                .next-btn.next-btn
-            .category-carousel.carousel-03
-              .main-carousel.medical-main-carousel
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_01.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_02.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_03.jpg`)
-              .dot-box
-                .pre-btn.pre-btn
-                .dot-carousel.medical-dot-carousel
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_01.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_02.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_03.jpg`)
-                .next-btn.next-btn
+            - var list = [5,8,2,1,2,9]
+            each item,index in list
+              .category-carousel(class="carousel-0"+(index+1) class={"active":index==0,"lock-dot-carousel-d":item<=5,"lock-dot-carousel-m":item<=3})
+                .main-carousel.application-main-carousel
+                  - for (var i = 1; i <= item; i++)
+                    .carousel-item
+                      .item
+                        figure.pic
+                          img(src=`../images/outdoor_type0${index+1}_pic0${i}.jpg`)
+                .dot-box
+                  .pre-btn.pre-btn
+                  .dot-carousel.application-dot-carousel
+                    - for (var i = 1; i <= item; i++)
+                      .carousel-item
+                        .pic(style=`background-image:url('../images/outdoor_type0${index+1}_pic0${i}.jpg')`)
+                  .next-btn.next-btn
     section.feature
       .wrapper
         h2 產品特色

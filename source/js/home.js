@@ -12,15 +12,15 @@ let home = () => {
     autoplaySpeed: "3000",
     slidesToShow: 1,
     focusOnSelect: true,
-    asNavFor: $(".product-dot-carousel"),
+    asNavFor: ".product-dot-carousel",
   });
-  console.log($(".product-dot-carousel .carousel-item").length);
   $(".product-dot-carousel").slick({
     dots: false,
     arrows: false,
     slidesToShow: $(".product-dot-carousel .carousel-item").length - 1,
     centerMode: true,
-    asNavFor: $(".product-main-carousel"),
+    focusOnSelect: true,
+    asNavFor: ".product-main-carousel",
     responsive: [
       {
         breakpoint: 768,
@@ -31,9 +31,9 @@ let home = () => {
     ],
   });
   $("#product-pre").on("click", () => {
-    $(".product-main-carousel").slick("slickPrev");
+    $(".product-dot-carousel").slick("slickPrev");
   });
   $("#product-next").on("click", () => {
-    $(".product-main-carousel").slick("slickNext");
+    $(".product-dot-carousel").slick("slickNext");
   });
 };

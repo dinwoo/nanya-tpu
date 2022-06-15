@@ -1,33 +1,26 @@
 let application = () => {
-  $(".category-btn").on("click", () => {
-    $(".category-box").show();
-  });
-  $(".category-box .category-item").on("click", function () {
-    $(".category").text($(this).text());
-    $(".category-box").hide();
-    $(".category-carousel").removeClass("active");
-    $(`.carousel-0${$(this).index() + 1}`).addClass("active");
-    // $(".category-carousel").hide();
-    // $(`.carousel-0${$(this).index() + 1}`).show();
-  });
+  console.log($(".category-carousel").length);
   for (let i = 0; i < $(".category-carousel").length; i++) {
-    const $mainCarousel = $(`.carousel-0${i + 1} .medical-main-carousel`);
-    const $dotCarousel = $(`.carousel-0${i + 1} .medical-dot-carousel`);
+    console.log(i);
+    const $mainCarousel = $(`.carousel-0${i + 1} .application-main-carousel`);
+    const $dotCarousel = $(`.carousel-0${i + 1} .application-dot-carousel`);
 
     $mainCarousel.slick({
       dots: false,
       arrows: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: "3000",
       slidesToShow: 1,
       focusOnSelect: true,
       asNavFor: $dotCarousel,
     });
     $dotCarousel.slick({
-      dots: false,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      focusOnSelect: true,
       arrows: false,
-      slidesToShow: $dotCarousel.children().length - 1,
       centerMode: true,
+      focusOnSelect: true,
       asNavFor: $mainCarousel,
       responsive: [
         {
@@ -46,7 +39,14 @@ let application = () => {
     });
   }
 
+  $(".category-btn").on("click", () => {
+    $(".category-box").show();
+  });
+  $(".category-box .category-item").on("click", function () {
+    $(".category").text($(this).text());
+    $(".category-box").hide();
+    $(".category-carousel").removeClass("active");
+    $(`.carousel-0${$(this).index() + 1}`).addClass("active");
+  });
   $(".category-box").hide();
-  // $(".category-carousel").hide();
-  // $(".carousel-01").show();
 };

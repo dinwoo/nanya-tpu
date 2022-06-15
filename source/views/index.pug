@@ -25,7 +25,7 @@ block body
         h2 #{$t.home.application.title}
         .box
           each item, index in $t.home.application.item
-            a.item(href="") 
+            a.item(href=item.link) 
               .info
                 figure.pic
                   img(src=`../images/home_application_0${index+1}.jpg`)

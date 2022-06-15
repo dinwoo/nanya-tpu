@@ -25,67 +25,29 @@ block body
         .category-btn
         .container
           .category-box
-            .category-item 交替TPU管條1
-            .category-item 交替TPU管條2
-            .category-item 交替TPU管條3
-            .category-item 交替TPU管條4
-            .category-item 交替TPU管條5
-            .category-item 交替TPU管條6
+            .category-item 交替TPU管條
+            .category-item 充氣TPU輔具
+            .category-item 高週波TPU囊袋
+            .category-item TPU膜敷墊
+            .category-item 護理TPU洗浴床
+            .category-item 護理TPU移床布
           .carousel-box
-            .category-carousel.carousel-01.active
-              .main-carousel.medical-main-carousel
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/home_application_01.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/home_application_02.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/home_application_03.jpg`)
-              .dot-box
-                .pre-btn.pre-btn
-                .dot-carousel.medical-dot-carousel
-                  .carousel-item
-                    .pic(style=`background-image:url('../images/home_application_01.jpg')`)
-                  .carousel-item
-                    .pic(style=`background-image:url('../images/home_application_02.jpg')`)
-                  .carousel-item
-                    .pic(style=`background-image:url('../images/home_application_03.jpg')`)
-                .next-btn.next-btn
-            .category-carousel.carousel-02
-              .main-carousel.medical-main-carousel
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_01.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_02.jpg`)
-                .carousel-item
-                  .item
-                    figure.pic
-                      img(src=`../images/PI_combination_application_03.jpg`)
-              .dot-box
-                .pre-btn.pre-btn
-                .dot-carousel.medical-dot-carousel
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_01.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_02.jpg`)
-                  .carousel-item
-                    .item
-                      figure.pic
-                        img(src=`../images/PI_combination_application_03.jpg`)
-                .next-btn.next-btn
+            - var list = [8,3,2,2,2,2]
+            each item,index in list
+              .category-carousel(class="carousel-0"+(index+1) class={"active":index==0,"lock-dot-carousel-d":item<=5,"lock-dot-carousel-m":item<=3})
+                .main-carousel.application-main-carousel
+                  - for (var i = 1; i <= item; i++)
+                    .carousel-item
+                      .item
+                        figure.pic
+                          img(src=`../images/medical_type0${index+1}_pic0${i}.jpg`)
+                .dot-box
+                  .pre-btn.pre-btn
+                  .dot-carousel.application-dot-carousel
+                    - for (var i = 1; i <= item; i++)
+                      .carousel-item
+                        .pic(style=`background-image:url('../images/medical_type0${index+1}_pic0${i}.jpg')`)
+                  .next-btn.next-btn
     section.feature
       .wrapper
         h2 產品特色

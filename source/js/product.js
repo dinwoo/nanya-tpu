@@ -16,13 +16,14 @@ let product = () => {
       arrows: false,
       slidesToShow: 3,
       centerMode: true,
+      focusOnSelect: true,
       asNavFor: $(".popup-main-carousel"),
     });
     $("#popup-pre").on("click", () => {
-      $(".popup-main-carousel").slick("slickPrev");
+      $(".popup-dot-carousel").slick("slickPrev");
     });
     $("#popup-next").on("click", () => {
-      $(".popup-main-carousel").slick("slickNext");
+      $(".popup-dot-carousel").slick("slickNext");
     });
     $("#certification-popup .pic-box .item").on("click", function () {
       $(".popup-main-carousel").slick("slickGoTo", $(this).data("index"));
@@ -63,6 +64,7 @@ let product = () => {
     arrows: false,
     slidesToShow: $(".product-dot-carousel .carousel-item").length - 1,
     centerMode: true,
+    focusOnSelect: true,
     asNavFor: $(".product-main-carousel"),
     responsive: [
       {
@@ -74,9 +76,9 @@ let product = () => {
     ],
   });
   $("#product-pre").on("click", () => {
-    $(".product-main-carousel").slick("slickPrev");
+    $(".product-dot-carousel").slick("slickPrev");
   });
   $("#product-next").on("click", () => {
-    $(".product-main-carousel").slick("slickNext");
+    $(".product-dot-carousel").slick("slickNext");
   });
 };

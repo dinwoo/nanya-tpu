@@ -17,20 +17,16 @@ block body
   article
     section.banner(style='background-image: url(../images/outdoor_banner.jpg)')
       .content
-        .slogan 戶外休閒
+        .slogan #{$t.outdoor.banner.slogan}
     section.carousel
       .wrapper
-        h2 戶外休閒
-        .category 高週波防水袋
+        h2 #{$t.outdoor.carousel.title}
+        .category #{$t.outdoor.carousel.category[0]}
         .category-btn
         .container
           .category-box
-            .category-item 高週波防水袋
-            .category-item 戶外休閒
-            .category-item 自行車旅行袋
-            .category-item 拳擊水袋
-            .category-item TPU耐磨充氣
-            .category-item 高週波用
+            each item,index in $t.outdoor.carousel.category
+              .category-item= item
           .carousel-box
             - var list = [5,8,2,1,2,9]
             each item,index in list
@@ -50,16 +46,11 @@ block body
                   .next-btn.next-btn
     section.feature
       .wrapper
-        h2 產品特色
+        h2 #{$t.outdoor.feature.title}
         .box
-          .item
-            .txt.dot ・各式布料淋膜搭配，提升耐刮磨，不穿透不穿破，戶外運動絕佳防護
-          .item
-            .txt.dot ・發泡材料強化吸震與耐衝擊，耐寒耐熱優於一般塑料，有效提升產品壽命
-          .item
-            .txt.dot ・適用高週波、熱壓等加工，無車縫兼具視覺簡約美觀與防水特性
-          .item
-            .txt.dot ・手感軟硬度、機能性壓紋、特殊設計等均能 從材料端直接配合開發
+          each item,index in $t.outdoor.feature.item
+            .item
+              .txt.dot= item.txt
 
 
 

@@ -17,20 +17,16 @@ block body
   article#sport
     section.banner(style='background-image: url(../images/sport_banner.jpg)')
       .content
-        .slogan 運動用品
+        .slogan #{$t.sport.banner.slogan}
     section.carousel
       .wrapper
-        h2 醫療輔運動用品器
-        .category 鞋眼補強材
+        h2 #{$t.sport.carousel.title}
+        .category #{$t.sport.carousel.category[0]}
         .category-btn
         .container
           .category-box
-            .category-item 鞋眼補強材
-            .category-item 鞋後跟支撐材
-            .category-item 側邊Logo鞋飾片
-            .category-item 鞋頭耐撞材
-            .category-item 熱壓貼合材
-            .category-item 衣用防水面料
+            each item,index in $t.sport.carousel.category
+              .category-item= item
           .carousel-box
             - var sport = [2,2,1,2,1,7]
             each item,index in sport
@@ -50,14 +46,11 @@ block body
                   .next-btn.next-btn
     section.feature
       .wrapper
-        h2 產品特色
+        h2 #{$t.sport.feature.title}
         .box
-          .item
-            .txt.dot ・南亞多樣加工工藝，可立即提供色水、紋路、壓紋或皮料及布料複合解決方案
-          .item
-            .txt.dot ・加工經驗與建議，為刮磨、防穿透、抗撕裂與加工性解決方案資選
-          .item
-            .txt.dot ・與熱熔膠複合，將具機能性TPU膠布透過熱熔膠與各式材料貼合
+          each item,index in $t.sport.feature.item
+            .item
+              .txt.dot= item.txt
 
 
 

@@ -17,20 +17,16 @@ block body
   article#medical
     section.banner(style='background-image: url(../images/medical_banner.jpg)')
       .content
-        .slogan 醫療整合解決方案
+        .slogan #{$t.medical.banner.slogan}
     section.carousel
       .wrapper
-        h2 醫療輔器
-        .category 交替TPU管條
+        h2 #{$t.medical.carousel.title}
+        .category #{$t.medical.carousel.category[0]}
         .category-btn
         .container
           .category-box
-            .category-item 交替TPU管條
-            .category-item 充氣TPU輔具
-            .category-item 高週波TPU囊袋
-            .category-item TPU膜敷墊
-            .category-item 護理TPU洗浴床
-            .category-item 護理TPU移床布
+            each item,index in $t.medical.carousel.category
+              .category-item= item
           .carousel-box
             - var list = [8,3,2,2,2,2]
             each item,index in list
@@ -50,20 +46,12 @@ block body
                   .next-btn.next-btn
     section.feature
       .wrapper
-        h2 產品特色
+        h2 #{$t.medical.feature.title}
         .box
-          .item
-            .title ・TPU膜壓紋絕佳親膚感
-            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
-          .item
-            .title ・TPU膜壓紋絕佳親膚感
-            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
-          .item
-            .title ・TPU膜壓紋絕佳親膚感
-            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
-          .item
-            .title ・TPU膜壓紋絕佳親膚感
-            .txt 優異塗層阻隔與南亞獨特TPU膜綿密細緻壓紋，具備易清潔、爽身無負擔的特色
+          each item,index in $t.medical.feature.item
+            .item
+              .title= item.subTitle
+              .txt= item.txt
 
 
 

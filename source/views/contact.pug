@@ -17,11 +17,11 @@ block body
   article#contact
     section.banner
       .content
-        .slogan 聯絡我們
+        .slogan #{$t.contact.banner.slogan}
         .txt
-          | 如果您對南亞公司有任何的建議或批評，非常歡迎來信指教，
+          | #{$t.contact.banner.txt1}
           br
-          | 我們將會用最快的速度回應給您
+          | #{$t.contact.banner.txt2}
     section.info
       .wrapper
         .box
@@ -33,17 +33,14 @@ block body
           //- 	| 任何問題請您與我們聯絡
           //- 	br
           //- 	| 進一步討論服務細節
-          p.contact_txt  聯絡人：黃𣫙守(Ben Huang)
-          p.contact_txt 電話：02-2680-6311#8254
-          p.contact_txt 傳真：02-2712-6113
-          p.contact_txt 公司電話：(02)-26806311 #2612
-          p.contact_txt Yishou@npc.com.tw
+          p.contact_txt #{$t.contact.info.person}
+          p.contact_txt #{$t.contact.info.phone}
+          p.contact_txt #{$t.contact.info.fax}
+          p.contact_txt #{$t.contact.info.mobile}
+          p.contact_txt #{$t.contact.info.email}
         .box
-          p.name
-            | 南亞塑膠工業股份有限公司
-            br
-            | 塑一部營業三處
-          p.addr 地址:台北市敦化北路201號3樓502室
+          p.name!= $t.contact.info.txt
+          p.addr #{$t.contact.info.address}
     section.form_part
       .wrapper
         h1.title #{$t.contact.form.title}

@@ -17,21 +17,19 @@ block body
   article#functional
     section.banner(style='background-image: url(../images/functional_banner.jpg)')
       .content
-        .slogan 機能應用
+        .slogan #{$t.functional.banner.slogan}
     section.carousel
       .wrapper
-        h2 機能運用
-        .category 防穿透攔油索
+        h2 #{$t.functional.carousel.title}
+        .category #{$t.functional.carousel.category[0]}
         .category-btn
         .container
           .category-box
-            .category-item 防穿透攔油索
-            .category-item 夾網防穿刺膜
-            .category-item 布料機能複合
-            .category-item 耐刮膜面料
+            each item,index in $t.functional.carousel.category
+              .category-item= item
           .carousel-box
-            - var sport = [1,1,3,1]
-            each item,index in sport
+            - var functional = [1,1,3,1]
+            each item,index in functional
               .category-carousel(class="carousel-0"+(index+1) class={"active":index==0,"lock-dot-carousel-d":item<=5,"lock-dot-carousel-m":item<=3})
                 .main-carousel.application-main-carousel
                   - for (var i = 1; i <= item; i++)
@@ -48,16 +46,11 @@ block body
                   .next-btn.next-btn
     section.feature
       .wrapper
-        h2 產品特色
+        h2 #{$t.functional.feature.title}
         .box
-          .item
-            .txt.dot ・無毒無味，可耐油，無任何塑化劑、溶劑等添加物，適用於食品接觸FDA等級薄膜
-          .item
-            .txt.dot ・南亞獨特輪具壓紋印刷，同時可在印刷與耐刮面層提供機能與視覺美觀性
-          .item
-            .txt.dot ・為應用提供耐刮磨、防穿透、抗撕裂與加工性解決方案資選
-          .item
-            .txt.dot ・可與熱熔膠複合，將具機能性TPU膠布透過熱熔膠與各式材料貼合
+          each item,index in $t.functional.feature.item
+            .item
+              .txt.dot= item.txt
 
 
 

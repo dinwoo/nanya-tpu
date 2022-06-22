@@ -9,10 +9,10 @@ footer
 			.content.product
 				.title #{$t.footer.title2}
 				.link-box
-					.item #{$t.footer.medical}
-					.item #{$t.footer.outdoor}
-					.item #{$t.footer.sport}
-					.item #{$t.footer.functional}
+					a.item(href="./medical.html")  #{$t.footer.medical}
+					a.item(href="./outdoor.html") #{$t.footer.outdoor}
+					a.item(href="./sport.html") #{$t.footer.sport}
+					a.item(href="./functional.html") #{$t.footer.functional}
 
 			.content.info
 				.title #{$t.footer.title3}
@@ -28,7 +28,7 @@ footer
 					a.item(href="tel:0226806311" target="_blank")
 						.icon
 							include ../partials/icons/tel_icon.pug
-						.txt +886-2-2712-6311#8254
+						.txt 886-2-2680-6311 #8254
 					a.item(href="javascript:;" target="_blank")
 						.icon
 							include ../partials/icons/fax_icon.pug

@@ -14,7 +14,7 @@ block js
     product();
 
 block body
-  article#contact
+  article#product
     section.banner
       .content
         .slogan #{$t.product.banner.slogan}
@@ -63,13 +63,11 @@ block body
       
     section#specification-popup.popup
       .container
-        .mask
         figure.pic
           img(src=`../images/product_specification.jpg`)
 
     section#certification-popup
       .container
-        .mask
         .carousel-box
           .main
             .main-carousel.popup-main-carousel

@@ -36,7 +36,6 @@ block body
           p.contact_txt #{$t.contact.info.person}
           p.contact_txt #{$t.contact.info.phone}
           p.contact_txt #{$t.contact.info.fax}
-          p.contact_txt #{$t.contact.info.mobile}
           p.contact_txt #{$t.contact.info.email}
         .box
           p.name!= $t.contact.info.txt
@@ -48,6 +47,9 @@ block body
         .row
           label(for="") #{$t.contact.form.nature}
           select#emailSelect(name="")
+            - var list = $t.contact.form.emailSelect
+            each item,index in list
+              option(value=item.id)= item.name 
         .row
           label(for="") #{$t.contact.form.name}
           input#name(type="text" placeholder=$t.contact.form.namePlaceholder)

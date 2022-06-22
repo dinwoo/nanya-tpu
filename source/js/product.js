@@ -18,12 +18,20 @@ let product = () => {
       centerMode: true,
       focusOnSelect: true,
       asNavFor: $(".popup-main-carousel"),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
     $("#popup-pre").on("click", () => {
-      $(".popup-dot-carousel").slick("slickPrev");
+      $(".popup-main-carousel").slick("slickPrev");
     });
     $("#popup-next").on("click", () => {
-      $(".popup-dot-carousel").slick("slickNext");
+      $(".popup-main-carousel").slick("slickNext");
     });
     $("#certification-popup .pic-box .item").on("click", function () {
       $(".popup-main-carousel").slick("slickGoTo", $(this).data("index"));
@@ -38,16 +46,22 @@ let product = () => {
   $("#specification-btn").on("click", () => {
     $("#specification-popup").show();
   });
-  $("#specification-popup .mask").on("click", () => {
+  $("#specification-popup").on("click", () => {
     $("#specification-popup").hide();
+  });
+  $("#specification-popup figure.pic").on("click", (e) => {
+    e.stopPropagation();
   });
 
   $(".certification-box .item").on("click", () => {
     if (!isSetCertification) setCertification();
     $("#certification-popup").show();
   });
-  $("#certification-popup .mask").on("click", () => {
+  $("#certification-popup").on("click", () => {
     $("#certification-popup").hide();
+  });
+  $("#certification-popup .carousel-box").on("click", (e) => {
+    e.stopPropagation();
   });
 
   $(".product-main-carousel").slick({

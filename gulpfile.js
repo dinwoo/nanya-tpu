@@ -184,7 +184,6 @@ gulp.task(
   "build",
   gulp.series(
     "clean",
-    "bower",
     "vendorJs",
     gulp.parallel("pugI18n", "sass", "babel", "image-min")
   )

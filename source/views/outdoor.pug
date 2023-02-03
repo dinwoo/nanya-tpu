@@ -1,0 +1,57 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/application.css")
+
+block js
+  script.
+    application();
+
+block body
+  article
+    section.banner(style='background-image: url(../images/outdoor_banner.jpg)')
+      .content
+        .slogan #{$t.outdoor.banner.slogan}
+    section.carousel
+      .wrapper
+        h2 #{$t.outdoor.carousel.title}
+        .category #{$t.outdoor.carousel.category[0]}
+        .category-btn
+        .container
+          .category-box
+            each item,index in $t.outdoor.carousel.category
+              .category-item= item
+          .carousel-box
+            - var list = [5,8,2,1,2,9]
+            each item,index in list
+              .category-carousel(class="carousel-0"+(index+1) class={"active":index==0,"lock-dot-carousel-d":item<=5,"lock-dot-carousel-m":item<=3})
+                .main-carousel.application-main-carousel
+                  - for (var i = 1; i <= item; i++)
+                    .carousel-item
+                      .item
+                        figure.pic
+                          img(src=`../images/outdoor_type0${index+1}_pic0${i}.jpg`)
+                .dot-box
+                  .pre-btn.pre-btn
+                  .dot-carousel.application-dot-carousel
+                    - for (var i = 1; i <= item; i++)
+                      .carousel-item
+                        .pic(style=`background-image:url('../images/outdoor_type0${index+1}_pic0${i}.jpg')`)
+                  .next-btn.next-btn
+    section.feature
+      .wrapper
+        h2 #{$t.outdoor.feature.title}
+        .box
+          each item,index in $t.outdoor.feature.item
+            .item
+              .txt.dot= item.txt
+
+
+
+

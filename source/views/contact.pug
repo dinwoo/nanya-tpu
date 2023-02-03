@@ -1,0 +1,81 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/contact.css")
+
+block js
+  script.
+    //- contact();
+
+block body
+  article#contact
+    section.banner
+      .content
+        .slogan #{$t.contact.banner.slogan}
+        .txt
+          | #{$t.contact.banner.txt1}
+          br
+          | #{$t.contact.banner.txt2}
+    section.info
+      .wrapper
+        .box
+          //- figure.icon
+            img(src="../images/contact_icon.png", alt="")
+          //- p.txt 
+          //- 	| 歡迎您造訪本公司網站，我們非常歡迎您
+          //- 	br
+          //- 	| 任何問題請您與我們聯絡
+          //- 	br
+          //- 	| 進一步討論服務細節
+          p.contact_txt #{$t.contact.info.person}
+          p.contact_txt #{$t.contact.info.phone}
+          p.contact_txt #{$t.contact.info.fax}
+          p.contact_txt #{$t.contact.info.email}
+        .box
+          p.name!= $t.contact.info.txt
+          p.addr #{$t.contact.info.address}
+    section.form_part
+      .wrapper
+        h1.title #{$t.contact.form.title}
+        p.txt #{$t.contact.form.remind}
+        .row
+          label(for="") #{$t.contact.form.nature}
+          select#emailSelect(name="")
+            - var list = $t.contact.form.emailSelect
+            each item,index in list
+              option(value=item.id)= item.name 
+        .row
+          label(for="") #{$t.contact.form.name}
+          input#name(type="text" placeholder=$t.contact.form.namePlaceholder)
+        .row
+          label(for="") #{$t.contact.form.phone}
+          input#tel(type="tel" placeholder=$t.contact.form.phonePlaceholder)
+        .row
+          label(for="") #{$t.contact.form.mobile}
+          input#phone(type="tel" maxLength="10" placeholder=$t.contact.form.mobilePlaceholder)
+        .row
+          label(for="") #{$t.contact.form.email}
+          input#email(type="text" placeholder=$t.contact.form.emailPlaceholder)
+        .row
+          label(for="") #{$t.contact.form.message}
+          textarea#txt(name="" placeholder=$t.contact.form.messagePlaceholder)
+        //- .row.verification-code
+          label(for="") #{$t.contact.form.verificationCode}
+          input#verificationCode(type="text")
+          .get-code
+            Identify(:identifyCode="identifyCode")
+          figure.refresh
+            img(src="@/assets/images/refresh.png")
+        .send_btn #{$t.contact.form.submit}
+
+    section.map
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.33372852544!2d121.54750761500672!3d25.05667548396177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abef461278a7%3A0x2cc681970e60513d!2z5Y-w5aGR5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1604591479166!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+
+

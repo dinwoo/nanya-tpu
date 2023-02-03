@@ -1,0 +1,18 @@
+doctype html
+html(lang=$t.htmlLang)
+  head
+    include partials/Meta.pug
+    include partials/CssLink.pug
+    block css
+  body(class=$t.lang+"-style")
+    include components/Header.pug
+    block header
+    block body
+    block footer
+    include components/Footer.pug
+    include partials/JsSrc.pug
+    block js
+      
+
+
+    

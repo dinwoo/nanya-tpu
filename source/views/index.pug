@@ -1,0 +1,108 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/home.css")
+
+block js
+  script.
+    home();
+
+block body
+  article
+    section.home-banner.slider
+      - for (var i = 1; i <= 4; i++)
+        figure.banner-item
+          img(src=`../images/${$t.lang}/home_banner_d_0${i}.jpg`)
+          img(src=`../images/${$t.lang}/home_banner_m_0${i}.jpg`)
+    section.application
+      .wrapper
+        h2 #{$t.home.application.title}
+        .box
+          each item, index in $t.home.application.item
+            a.item(href=item.link) 
+              .info
+                figure.pic
+                  img(src=`../images/home_application_0${index+1}.jpg`)
+                .mask
+                  .txt
+                    each txt in item.txt
+                      p= txt
+              .name= item.name
+    section.carousel
+      .wrapper
+        h2 #{$t.home.product.title}
+        .container
+          .main-carousel.product-main-carousel
+            .carousel-item
+              .item
+                iframe(src="https://www.youtube.com/embed/Nat3CtxBNDY" allowfullscreen)
+            .carousel-item
+              .item
+                iframe(src="https://www.youtube.com/embed/jeN8gZGarBU" allowfullscreen)
+            - for (var i = 1; i <= 4; i++)
+              .carousel-item
+                .item
+                  figure.pic
+                    img(src=`../images/${$t.lang}/home_product_0${i}.jpg`)
+          .dot-box
+            .pre-btn#product-pre
+            .dot-carousel.product-dot-carousel
+              .carousel-item
+                .item
+                  iframe(src="https://www.youtube.com/embed/Nat3CtxBNDY" allowfullscreen)
+              .carousel-item
+                .item
+                  iframe(src="https://www.youtube.com/embed/jeN8gZGarBU" allowfullscreen)
+              - for (var i = 1; i <= 4; i++)
+                .carousel-item
+                  .pic(style=`background-image:url('../images/${$t.lang}/home_product_0${i}.jpg')`)
+            .next-btn#product-next
+    section.case
+      .wrapper
+        h2 #{$t.home.case.title}
+        .container
+          //- each item, index in $t.home.application.item
+          .item
+            .left
+              .name #{$t.home.case.item[0].name}
+              .txt #{$t.home.case.item[0].txt}
+              a.more-btn(href="./medical.html") #{$t.home.case.item[0].btn}
+              figure.sub-pic
+                img(src=`../images/home_case_05.png`)
+            .right
+              figure.pic
+                img(src=`../images/home_case_01.jpg`)
+              a.more-btn(href="./medical.html") #{$t.home.case.item[0].btn}
+          .item
+            .left
+              .name #{$t.home.case.item[1].name}
+              .txt #{$t.home.case.item[1].txt}
+              a.more-btn(href="./medical.html") #{$t.home.case.item[1].btn}
+            .right
+              figure.pic
+                img(src=`../images/home_case_02.jpg`)
+          .item.sub-item
+            .left
+              .name #{$t.home.case.item[2].name}
+              .txt #{$t.home.case.item[2].txt}
+              a.more(href="./sport.html") #{$t.home.case.item[2].btn}
+            .right
+              figure.pic
+                img(src=`../images/home_case_03.jpg`)
+          .item.sub-item
+            .left
+              .name #{$t.home.case.item[3].name}
+              .txt #{$t.home.case.item[3].txt}
+              a.more(href="./medical.html") #{$t.home.case.item[3].btn}
+            .right
+              figure.pic
+                img(src=`../images/home_case_04.jpg`)
+
+
+

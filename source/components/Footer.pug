@@ -1,0 +1,74 @@
+footer
+	.main-footer
+		.wrapper
+			.content.global
+				.title #{$t.footer.title1}
+				a.map(href="https://www.npc.com.tw/j2npc/zhtw/product/Cc1p06.do" target="_blank")
+					.pic
+						include ../partials/icons/earth_map.pug
+			.content.product
+				.title #{$t.footer.title2}
+				.link-box
+					a.item(href="./medical.html")  #{$t.footer.medical}
+					a.item(href="./outdoor.html") #{$t.footer.outdoor}
+					a.item(href="./sport.html") #{$t.footer.sport}
+					a.item(href="./functional.html") #{$t.footer.functional}
+
+			.content.info
+				.title #{$t.footer.title3}
+				.info-box
+					//- a.item(href="https://www.nanya-andre-tex.com" target="_blank")
+						.icon
+							include ../partials/icons/earth_icon.pug
+						.txt www.nanya-andre-tex.com
+					a.item(href="mailto:YiShou@npc.com.tw" target="_blank")
+						.icon
+							include ../partials/icons/mail_icon.pug
+						.txt YiShou@npc.com.tw
+					a.item(href="tel:0226806311" target="_blank")
+						.icon
+							include ../partials/icons/tel_icon.pug
+						.txt 886-2-2680-6311 #8254
+					a.item(href="javascript:;" target="_blank")
+						.icon
+							include ../partials/icons/fax_icon.pug
+						.txt +886-2-2712-6113
+					a.item(href="https://goo.gl/maps/KFKPRxzyrGkB4Rfc9" target="_black")
+						.icon
+							include ../partials/icons/house_icon.pug
+						.txt #{$t.footer.address}
+			.content.company
+				.title #{$t.footer.title4}
+				.company-box
+					a.item(href="https://www.fpg.com.tw/tw" target="_blank")
+						figure.company
+							img(src="../images/footer_company_01.png", alt="")
+					a.item(href="http://www.fpc.com.tw/fpcw/" target="_blank")
+						figure.company
+							img(src="../images/footer_company_05.png", alt="")
+					a.item(href="http://www.npc.com.tw/j2npc/zhtw" target="_blank")
+						figure.company
+							img(src="../images/footer_company_02.png", alt="")
+					a.item()
+						figure.QRCode
+							img(src="../images/footer_QRCode_01.png", alt="")
+						p.name #{$t.footer.plastics}
+					a.item(href="http://www.fcfc.com.tw/PRE/TW/index.html" target="_blank")
+						figure.company
+							img(src="../images/footer_company_06.png", alt="")
+					a.item(href="http://www.fpcc.com.tw/tc/" target="_blank")
+						figure.company
+							img(src="../images/footer_company_03.png", alt="")
+					a.item(href="http://www.fhs.com.vn/" target="_blank")
+						figure.company
+							img(src="../images/footer_company_07.png", alt="")
+					a.item()
+						figure.QRCode
+							img(src="../images/footer_QRCode_02.png", alt="")
+						p.name 多媒體中心
+	.sub-footer
+		.wrapper
+			.box
+				.copyright #{$t.footer.copyright}
+			.box
+				.txt #{$t.footer.remind}

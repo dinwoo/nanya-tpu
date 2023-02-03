@@ -1,0 +1,55 @@
+header
+	.wrapper
+		.nanya-logo
+			figure.pic
+				img(src="../images/logo.png")
+		.main
+			.close
+			ul.main-menu
+				li.main-item 
+					a.main-a(href="../"+$t.lang+"/index.html") #{$t.header.home}
+				li.main-item
+					a.main-a(href="http://www.nanya-plastics-mall.com.tw/" target="_blank") #{$t.header.nanya}
+				li.main-item 
+					.main-a #{$t.header.application}
+					ul.sub-menu
+						li.sub-item
+							a.sub-a(href="./medical.html") #{$t.header.medical}
+						li.sub-item
+							a.sub-a(href="./outdoor.html") #{$t.header.outdoor}
+						li.sub-item
+							a.sub-a(href="./sport.html") #{$t.header.sport}
+						li.sub-item
+							a.sub-a(href="./functional.html") #{$t.header.functional}
+				li.main-item
+					a.main-a(href="./product.html") #{$t.header.product}
+				li.main-item 
+					a.main-a(href="./case.html") #{$t.header.case}
+				li.main-item
+					a.main-a(href="./contact.html") #{$t.header.contact}
+			.mobile-lang
+				.svg-box
+					include ../partials/icons/earth_icon.pug
+				p
+					span 語系 : 
+					| 繁體中文 ▼
+				ul.sub-menu
+					li.sub-item
+						a.sub-a(href="../zh")  繁體中文
+						a.sub-a(href="../ch")  简体中文
+						a.sub-a(href="../en")  English
+		.lang
+			.svg-box
+				include ../partials/icons/earth_icon.pug
+			p
+				span 語系 : 
+				| 繁體中文 ▼
+			ul.sub-menu
+				li.sub-item
+					a.sub-a(href="../zh")  繁體中文
+					a.sub-a(href="../ch")  简体中文
+					a.sub-a(href="../en")  English
+		.ham
+			.line
+			.line
+			.line

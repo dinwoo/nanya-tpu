@@ -1,0 +1,58 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/application.css")
+
+block js
+  script.
+    application();
+
+block body
+  article#medical
+    section.banner(style='background-image: url(../images/medical_banner.jpg)')
+      .content
+        .slogan #{$t.medical.banner.slogan}
+    section.carousel
+      .wrapper
+        h2 #{$t.medical.carousel.title}
+        .category #{$t.medical.carousel.category[0]}
+        .category-btn
+        .container
+          .category-box
+            each item,index in $t.medical.carousel.category
+              .category-item= item
+          .carousel-box
+            - var list = [8,3,2,2,2,2]
+            each item,index in list
+              .category-carousel(class="carousel-0"+(index+1) class={"active":index==0,"lock-dot-carousel-d":item<=5,"lock-dot-carousel-m":item<=3})
+                .main-carousel.application-main-carousel
+                  - for (var i = 1; i <= item; i++)
+                    .carousel-item
+                      .item
+                        figure.pic
+                          img(src=`../images/medical_type0${index+1}_pic0${i}.jpg`)
+                .dot-box
+                  .pre-btn.pre-btn
+                  .dot-carousel.application-dot-carousel
+                    - for (var i = 1; i <= item; i++)
+                      .carousel-item
+                        .pic(style=`background-image:url('../images/medical_type0${index+1}_pic0${i}.jpg')`)
+                  .next-btn.next-btn
+    section.feature
+      .wrapper
+        h2 #{$t.medical.feature.title}
+        .box
+          each item,index in $t.medical.feature.item
+            .item
+              .title= item.subTitle
+              .txt= item.txt
+
+
+
+

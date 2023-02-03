@@ -1,0 +1,38 @@
+extend ../Layout.pug
+
+block header
+  //- include ../components/Header.pug
+
+block footer
+  //- include ../components/Footer.pug
+
+block css
+  link(rel="stylesheet", href="../css/case.css")
+
+block js
+  script.
+    //- caseFn();
+
+block body
+  article#case
+    section.banner
+    each item, index in $t.case.content
+      section.case-section
+        .wrapper
+          h2= item.title
+          if index == 1
+            figure.big-pic
+              img(src=`../images/case_pic_0${index+1}.jpg`)
+          if index == 0||index==2
+            .container
+              .txt= item.txt
+              figure.pic
+                img(src=`../images/case_pic_0${index+1}.jpg`)
+              if index == 0||index==2
+              .content
+                .sub-title= item.subTitle
+                .box
+                  each subItem in item.item
+                    .item= "| " + subItem
+
+

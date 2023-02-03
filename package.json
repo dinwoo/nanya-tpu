@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
+    "bower-install": "bower install",
     "build": "gulp build --env production",
     "build-gh-page": "sh deploy.sh"
   },

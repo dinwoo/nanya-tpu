@@ -3,7 +3,7 @@
   "htmlLang": "zh-Hans",
   "header": {
     "home": "首页",
-    "nanya": "南亚塑胶城",
+    "nanya": "南亚云端网络商城",
     "application": "TPU应用",
     "medical": "医疗辅器",
     "outdoor": "户外休闲",
@@ -27,6 +27,7 @@
     "remind": "网站内之所有著作及资料，其著作权、专利权、商标、其他智慧财产权、所有权或其他权利，均为本企业所有，非经本企业合法授权，不得擅自重制、改作或以其他任何形式、基于任何目的加以使用。"
   },
   "home": {
+    "youtube": "https://www.youtube.com/embed/Rg3o1WvAdag",
     "application": {
       "title": "TPU应用",
       "item": [
@@ -314,11 +315,11 @@
       "txt2": "我们将会用最快的速度回应给您"
     },
     "info": {
-      "person": "联络人：黄𣫙守(Ben Huang)",
-      "phone": "电话：02-2680-6311#8254",
+      "person": "联络人：曾俊超(Karl Tseng)",
+      "phone": "电话：02-27122211#8248",
       "mobile": "公司电话：(02)-26806311 #2612",
       "fax": "传真：02-2712-6113",
-      "email": "Yishou@npc.com.tw",
+      "email": "karltg@npc.com.tw",
       "txt": "南亚塑胶工业股份有限公司<br>塑一部营业三处",
       "address": "地址:台北市敦化北路201号3楼502室"
     },

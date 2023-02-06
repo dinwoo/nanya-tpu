@@ -3,7 +3,7 @@
   "htmlLang": "zh-Hant",
   "header": {
     "home": "首頁",
-    "nanya": "南亞塑膠城",
+    "nanya": "南亞雲端網絡商城",
     "application": "TPU應用",
     "medical": "醫療輔器",
     "outdoor": "戶外休閒",
@@ -27,6 +27,7 @@
     "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
   },
   "home": {
+    "youtube": "https://www.youtube.com/embed/Nat3CtxBNDY",
     "application": {
       "title": "TPU應用",
       "item": [
@@ -294,11 +295,11 @@
       "txt2": "我們將會用最快的速度回應給您"
     },
     "info": {
-      "person": "聯絡人：黃𣫙守(Ben Huang)",
-      "phone": "電話：02-2680-6311#8254",
+      "person": "聯絡人：曾俊超(Karl Tseng)",
+      "phone": "電話：02-27122211#8248",
       "mobile": "公司電話：(02)-26806311 #2612",
       "fax": "傳真：02-2712-6113",
-      "email": "Yishou@npc.com.tw",
+      "email": "karltg@npc.com.tw",
       "txt": "南亞塑膠工業股份有限公司<br>塑一部營業三處",
       "address": "地址:台北市敦化北路201號3樓502室"
     },

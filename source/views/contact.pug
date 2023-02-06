@@ -11,7 +11,7 @@ block css
 
 block js
   script.
-    //- contact();
+    contact();
 
 block body
   article#contact
@@ -35,7 +35,7 @@ block body
           //- 	| 進一步討論服務細節
           p.contact_txt #{$t.contact.info.person}
           p.contact_txt #{$t.contact.info.phone}
-          p.contact_txt #{$t.contact.info.fax}
+          //- p.contact_txt #{$t.contact.info.fax}
           p.contact_txt #{$t.contact.info.email}
         .box
           p.name!= $t.contact.info.txt
@@ -46,25 +46,25 @@ block body
         p.txt #{$t.contact.form.remind}
         .row
           label(for="") #{$t.contact.form.nature}
-          select#emailSelect(name="")
+          select#emailSelect(name="type")
             - var list = $t.contact.form.emailSelect
             each item,index in list
-              option(value=item.id)= item.name 
+              option(value=item.name)= item.name 
         .row
           label(for="") #{$t.contact.form.name}
-          input#name(type="text" placeholder=$t.contact.form.namePlaceholder)
+          input#name(type="text" name="name" placeholder=$t.contact.form.namePlaceholder)
         .row
           label(for="") #{$t.contact.form.phone}
-          input#tel(type="tel" placeholder=$t.contact.form.phonePlaceholder)
+          input#tel(type="tel" name="phone" placeholder=$t.contact.form.phonePlaceholder)
         .row
           label(for="") #{$t.contact.form.mobile}
-          input#phone(type="tel" maxLength="10" placeholder=$t.contact.form.mobilePlaceholder)
+          input#phone(type="tel" name="mobile" maxLength="10" placeholder=$t.contact.form.mobilePlaceholder)
         .row
           label(for="") #{$t.contact.form.email}
-          input#email(type="text" placeholder=$t.contact.form.emailPlaceholder)
+          input#email(type="text" name="email" placeholder=$t.contact.form.emailPlaceholder)
         .row
           label(for="") #{$t.contact.form.message}
-          textarea#txt(name="" placeholder=$t.contact.form.messagePlaceholder)
+          textarea#txt(name="message" placeholder=$t.contact.form.messagePlaceholder)
         //- .row.verification-code
           label(for="") #{$t.contact.form.verificationCode}
           input#verificationCode(type="text")
@@ -72,7 +72,7 @@ block body
             Identify(:identifyCode="identifyCode")
           figure.refresh
             img(src="@/assets/images/refresh.png")
-        .send_btn #{$t.contact.form.submit}
+        .send_btn#sendEmail #{$t.contact.form.submit}
 
     section.map
       iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.33372852544!2d121.54750761500672!3d25.05667548396177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abef461278a7%3A0x2cc681970e60513d!2z5Y-w5aGR5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1604591479166!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)

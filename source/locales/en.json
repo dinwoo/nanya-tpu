@@ -1,0 +1,341 @@
+{
+  "lang": "en",
+  "htmlLang": "en",
+  "header": {
+    "home": "首頁",
+    "nanya": "南亞塑膠城",
+    "application": "TPU應用",
+    "medical": "醫療輔器",
+    "outdoor": "戶外休閒",
+    "sport": "運動用品",
+    "functional": "機能應用",
+    "product": "產品資訊",
+    "case": "案例介紹",
+    "contact": "聯絡我們"
+  },
+  "footer": {
+    "title1": "全球銷售通路",
+    "title2": "產品資訊",
+    "title3": "聯絡資訊",
+    "title4": "快速連結",
+    "medical": "醫療輔器",
+    "outdoor": "戶外休閒",
+    "sport": "運動用品",
+    "functional": "機能應用",
+    "address": "台北市敦化北路201號台塑大樓3樓502室",
+    "copyright": "Copyright © 2022 南亞塑膠工業股份有限公司 All Rights Reserved.",
+    "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
+  },
+  "home": {
+    "application": {
+      "title": "TPU應用",
+      "item": [
+        {
+          "name": "醫療輔器",
+          "link": "./medical.html",
+          "txt": [
+            "Alternate TPU pipe strips",
+            "Inflatable TPU aids",
+            "High frequency TPU pouch",
+            "TPU film pad",
+            "Nursing TPU bath bed",
+            "Nursing TPU transfer bed cloth"
+          ]
+        },
+        {
+          "name": "戶外休閒",
+          "link": "./outdoor.html",
+          "txt": [
+            "High frequency waterproof bag",
+            "Outdoor leisure",
+            "Bicycle travel bag",
+            "Boxing water bag",
+            "TPU wear-resistant inflatable",
+            "For high frequency"
+          ]
+        },
+        {
+          "name": "運動用品",
+          "link": "./sport.html",
+          "txt": [
+            "Reinforcing material for shoe eyelets",
+            "Heel support material",
+            "Side logo shoe patch",
+            "Toe cap impact-resistant material",
+            "Hot pressing laminating material",
+            "Waterproof fabric for clothing"
+          ]
+        },
+        {
+          "name": "機能運用",
+          "link": "./functional.html",
+          "txt": ["Anti-penetration oil barrier", "Clip-net anti-puncture film", "Composite cloth function", "Scratch resistant film fabric"]
+        }
+      ]
+    },
+    "product": {
+      "title": "產品資訊"
+    },
+    "case": {
+      "title": "Case introduction",
+      "item": [
+        {
+          "name": "Decompression air cushion",
+          "txt": "Nan Ya TPU synthetic leather can withstand continuous inflation and degassing cycles without air leakage, providing effective alternating decompression.",
+          "btn": "了解更多"
+        },
+        {
+          "name": "TPU bath bed",
+          "txt": "Excellent washing resistance,unique anti-slip texture and skin-friendly material.",
+          "btn": "了解更多"
+        },
+        {
+          "name": "The best choice for popular collocation and easy processing.",
+          "txt": "TPU film and hot melt material which easily hot press with fabric is visually simple, popular, and lightweight.",
+          "btn": ">>了解更多"
+        },
+        {
+          "name": "Transfer bed cloth",
+          "txt": "Special coating and TPU coating enhance slippery movement and easy cleaning.",
+          "btn": ">>了解更多"
+        }
+      ]
+    }
+  },
+  "medical": {
+    "banner": {
+      "slogan": "Integrated Medical Solutions"
+    },
+    "carousel": {
+      "title": "醫療輔器",
+      "category": [
+        "Alternate TPU pipe strips",
+        "Inflatable TPU aids",
+        "High frequency TPU pouch",
+        "TPU film pad",
+        "Nursing TPU bath bed",
+        "Nursing TPU transfer bed cloth"
+      ]
+    },
+    "feature": {
+      "title": "Feature of product",
+      "item": [
+        {
+          "subTitle": "・TPU film embossed with excellent skin-friendly feeling",
+          "txt": "Excellent coating barrier and Nan Ya's unique TPU film are dense and finely embossed, with the characteristics of easy cleaning, refreshing, and no burden."
+        },
+        {
+          "subTitle": "・Strong adhesion and easy processing",
+          "txt": "TPU film has strong adhesion characteristics, no air leakage during filling and discharging, no twisting of the tube, stable quality, and easy processing."
+        },
+        {
+          "subTitle": "・Medical grade, food grade FDA certification, etc.",
+          "txt": "Complete biocompatibility, anti-mildew and anti-bacterial, FDA, and other certification tests provide security for medical applications."
+        },
+        {
+          "subTitle": "・It can be sterilized by EO and GAMMA",
+          "txt": "It can be EO and GAMMA sterilized and still has an excellent sterile barrier. It has multiple processing and applications, low disinfection cost, easy monitoring, and is suitable for medical-grade and food-grade TPU membranes."
+        }
+      ]
+    }
+  },
+  "outdoor": {
+    "banner": {
+      "slogan": "戶外休閒"
+    },
+    "carousel": {
+      "title": "戶外休閒",
+      "category": [
+        "High frequency waterproof bag",
+        "Outdoor leisure",
+        "Bicycle travel bag",
+        "Boxing water bag",
+        "TPU wear-resistant inflatable",
+        "For high frequency"
+      ]
+    },
+    "feature": {
+      "title": "Feature of product",
+      "item": [
+        {
+          "txt": "・Combined with various fabric coatings to improve scratch resistance, non-penetrating or piercing, excellent protection for outdoor sports."
+        },
+        {
+          "txt": "・Foaming material strengthens shock absorption and impact resistance, cold resistance and heat resistance are better than ordinary plastics, effectively prolonging product life."
+        },
+        {
+          "txt": "・Suitable for high-frequency, hot-pressing, and other processing, no sewing, simple and beautiful visual, and waterproof."
+        },
+        {
+          "txt": "・Hand-feeling hardness, functional embossing, special design, etc. can be directly developed from the material side."
+        }
+      ]
+    }
+  },
+  "sport": {
+    "banner": {
+      "slogan": "運動用品"
+    },
+    "carousel": {
+      "title": "運動用品",
+      "category": [
+        "Reinforcing material for shoe eyelets",
+        "Heel support material",
+        "Side logo shoe patch",
+        "Toe cap impact-resistant material",
+        "Hot pressing laminating material",
+        "Waterproof fabric for clothing"
+      ]
+    },
+    "feature": {
+      "title": "Feature of product",
+      "item": [
+        {
+          "txt": "・Nan Ya has a variety of processing techniques, and can immediately provide solutions for color, texture, embossing, or leather and fabric composites."
+        },
+        {
+          "txt": "・Processing experience and suggestions, selected for the solutions of scraping, anti-penetration, tear-resistance, and processability."
+        },
+        {
+          "txt": "・Composite with hot-melt adhesive, the functional TPU tape is bonded to various materials through the hot-melt adhesive."
+        }
+      ]
+    }
+  },
+  "functional": {
+    "banner": {
+      "slogan": "機能應用"
+    },
+    "carousel": {
+      "title": "機能應用",
+      "category": ["Anti-penetration oil barrier", "Clip-net anti-puncture film", "Composite cloth function", "Scratch resistant film fabric"]
+    },
+    "feature": {
+      "title": "Feature of product",
+      "item": [
+        {
+          "txt": "・Non-toxic, odorless, oil-resistant, without any plasticizers, solvents, and other additives, suitable for food contact FDA-grade films."
+        },
+        {
+          "txt": "・Nan Ya's unique wheel embossing printing, while providing function and visual aesthetics in the printing and scratch-resistant surface layer."
+        },
+        {
+          "txt": "・Provide options for scratch-resistant, anti-penetration, tear-resistant, and processability solutions for applications."
+        },
+        {
+          "txt": "・Composite with hot-melt adhesive, the functional TPU tape is bonded to various materials through the hot-melt adhesive."
+        }
+      ]
+    }
+  },
+  "product": {
+    "banner": {
+      "slogan": "產品資訊"
+    },
+    "information": {
+      "item": [
+        {
+          "title": "Product Specifications",
+          "txt": "Provide optimal solutions for TPU composite materials and display functionality, and provide professional tailor-made suggestions according to application requirements and processing requirements, allowing you to quickly develop ideal products and put them into practice!"
+        },
+        {
+          "title": "Innovative R&D",
+          "txt": "The pioneer leader in the integration of materials and processing, grasping the new trends of product, Nan Ya TPU has cooperated with professional R&D teams to carry out in-depth research on smart wear, high moisture permeability, and high barrier to human body contact. Your participation is welcome to inject innovation into product development and new opportunities!"
+        },
+        {
+          "title": "Processing application",
+          "txt": "With many processing processes, non-toxic high-frequency and hot-press processing, reducing sewing to improve batch processing economy, excellent waterproof effect, uniform and firm air-tight, enhanced durability, and other characteristics. The printing process can pass through the film material, a high scratch-resistant film protection effect, effectively protecting the printing layer, and is the first choice for the alternative material of the film material."
+        }
+      ],
+      "btn": ">>查看規格表"
+    },
+    "carousel": {
+      "title": "Use combinations",
+      "txt": "Diversified and complex technologies provide you with exclusive embossing options with multiple levels of vision, functional weather resistance and a variety of texture presentations. Nan Ya's one-stop solution is perfectly achieved, allowing you to easily and conveniently obtain it instantly."
+    },
+    "certification": {
+      "title": "Quality Assurance",
+      "txt": "Nan Ya's quality can be verified by you, has passed the tests of biocompatibility, irritation and allergies, and cytotoxicity. It is a reliable choice for you to purchase with peace of mind. In order to continue to maintain the leading position of the brand, We continue to devote ourselves to the acquisition of comprehensive certifications such as medical, outdoor, and composite, we welcome your inquiries and suggestions.",
+      "item": [
+        "Biological Irritant Allergy Report ",
+        "Soochow University Biocompatibility",
+        "biocompatible cytotoxicity",
+        "FDA report - TPU leather",
+        "ITS Mildew Report - ASTM G21"
+      ]
+    }
+  },
+  "case": {
+    "banner": {
+      "slogan": ""
+    },
+    "content": [
+      {
+        "title": "High Frequency Processing",
+        "txt": "Non-toxic and with no additional additives, Nan Ya pure TPU, is the first choice for high-frequency medical use, with good tensile and inflatable strength and rigidity, providing reliable, simple, and modularized products for various medical inflatable products, outdoor air cushion products, leisure composite, and waterproof products. The best choice for mass production.",
+        "subTitle": "Currently applied to",
+        "item": ["Medical bed tube", "Massage rehabilitation airbag", "Shoe Material", "Blood pressure pulse bag", "Water-proof bag"]
+      },
+      {
+        "title": "Hot press processing"
+      },
+      {
+        "title": "Printing processing",
+        "txt": "Through embossed transfer, it can provide protection for the printing layer to prevent abrasion and visual multi-level presentation, such as vertical and horizontal printing patterns, spun carbon fiber weaving, lenticular patterns, and plain printing on the back to ensure printing color fastness and resolution.",
+        "subTitle": "Currently applied to",
+        "item": ["Rail vehicle floor", "Wearing carrier", "Laundry labels for clothes"]
+      }
+    ]
+  },
+  "contact": {
+    "banner": {
+      "slogan": "聯絡我們",
+      "txt1": "如果您對南亞公司有任何的建議或批評，非常歡迎來信指教，",
+      "txt2": "我們將會用最快的速度回應給您"
+    },
+    "info": {
+      "person": "聯絡人：黃𣫙守(Ben Huang)",
+      "phone": "電話：02-2680-6311#8254",
+      "mobile": "公司電話：(02)-26806311 #2612",
+      "fax": "傳真：02-2712-6113",
+      "email": "Yishou@npc.com.tw",
+      "txt": "南亞塑膠工業股份有限公司<br>塑一部營業三處",
+      "address": "地址:台北市敦化北路201號3樓502室"
+    },
+    "form": {
+      "title": "聯絡我們",
+      "remind": "如果您對南亞公司有任何的建議或批評，我們非常歡迎您能來信指教，或致電客服專線，我們將用心聆聽，並以最快的速度回應給您，謝謝",
+      "nature": "選擇聯絡性質",
+      "name": "姓名",
+      "namePlaceholder": "請輸入您的姓名",
+      "phone": "聯絡電話",
+      "phonePlaceholder": "請輸入您的聯絡電話",
+      "mobile": "手機號碼",
+      "mobilePlaceholder": "請輸入您的手機號碼",
+      "email": "電子信箱",
+      "emailPlaceholder": "請輸入您的電子信箱",
+      "message": "您的留言",
+      "messagePlaceholder": "您想反應的狀況，建議，或諮詢事項",
+      "verificationCode": "驗證碼",
+      "submit": "送出",
+      "emailSelect": [
+        {
+          "id": 1,
+          "name": "醫療輔器"
+        },{
+          "id": 2,
+          "name": "戶外休閒"
+        },{
+          "id": 3,
+          "name": "運動用品"
+        },{
+          "id": 4,
+          "name": "機能應用"
+        },{
+          "id": 5,
+          "name": "其他"
+        }
+      ]
+    }
+  }
+}

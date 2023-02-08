@@ -23,11 +23,19 @@
     "sport": "運動用品",
     "functional": "機能應用",
     "address": "台北市敦化北路201號台塑大樓3樓502室",
+    "link1": "http://www.fpc.com.tw/fpcw/",
+    "link2": "https://www.npc.com.tw/j2npc/zhtw",
+    "link3": "",
+    "plastics": "台塑企業網站",
+    "link4": "",
+    "link5": "",
+    "link6": "",
+    "media": "多媒體中心",
     "copyright": "Copyright © 2022 南亞塑膠工業股份有限公司 All Rights Reserved.",
     "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
   },
   "home": {
-    "youtube": "https://www.youtube.com/embed/Nat3CtxBNDY",
+    "youtube": "https://www.youtube.com/embed/136NBtaE4CE",
     "application": {
       "title": "TPU應用",
       "item": [

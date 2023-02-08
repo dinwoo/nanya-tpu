@@ -9,20 +9,22 @@
     "outdoor": "户外休闲",
     "sport": "运动用品",
     "functional": "机能应用",
-    "product": "产品资讯",
+    "product": "产品信息",
     "case": "案例介绍",
     "contact": "联络我们"
   },
   "footer": {
     "title1": "全球销售通路",
-    "title2": "产品资讯",
-    "title3": "联络资讯",
+    "title2": "产品信息",
+    "title3": "联络信息",
     "title4": "快速连结",
     "medical": "医疗辅器",
     "outdoor": "户外休闲",
     "sport": "运动用品",
     "functional": "机能应用",
     "address": "台北市敦化北路201号台塑大楼3楼502室",
+    "plastics": "台塑企业网站",
+    "media": "多媒体中心",
     "copyright": "Copyright © 2022 南亚塑胶工业股份有限公司 All Rights Reserved.",
     "remind": "网站内之所有著作及资料，其著作权、专利权、商标、其他智慧财产权、所有权或其他权利，均为本企业所有，非经本企业合法授权，不得擅自重制、改作或以其他任何形式、基于任何目的加以使用。"
   },
@@ -80,7 +82,7 @@
       ]
     },
     "product": {
-      "title": "产品资讯"
+      "title": "产品信息"
     },
     "case": {
       "title": "案例介绍",
@@ -241,7 +243,7 @@
   },
   "product": {
     "banner": {
-      "slogan": "产品资讯"
+      "slogan": "产品信息"
     },
     "information": {
       "item": [

@@ -1,10 +1,10 @@
 doctype html
-html(lang=$t.htmlLang)
+html(lang=$t.htmlLang class=$t.lang+"-style")
   head
     include partials/Meta.pug
     include partials/CssLink.pug
     block css
-  body(class=$t.lang+"-style")
+  body
     include components/Header.pug
     block header
     block body

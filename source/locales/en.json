@@ -2,37 +2,39 @@
   "lang": "en",
   "htmlLang": "en",
   "header": {
-    "home": "首頁",
-    "nanya": "南亞塑膠城",
-    "application": "TPU應用",
-    "medical": "醫療輔器",
-    "outdoor": "戶外休閒",
-    "sport": "運動用品",
-    "functional": "機能應用",
-    "product": "產品資訊",
-    "case": "案例介紹",
-    "contact": "聯絡我們"
+    "home": "Home",
+    "nanya": "Nan Ya Cyber Shopping Mall",
+    "application": "TPU Application",
+    "medical": "Medical Aids",
+    "outdoor": "Outdoor Leisure",
+    "sport": "Sporting Products",
+    "functional": "Functional Application",
+    "product": "Products Information",
+    "case": "Case Introduction",
+    "contact": "Contact Us"
   },
   "footer": {
-    "title1": "全球銷售通路",
-    "title2": "產品資訊",
-    "title3": "聯絡資訊",
-    "title4": "快速連結",
-    "medical": "醫療輔器",
-    "outdoor": "戶外休閒",
-    "sport": "運動用品",
-    "functional": "機能應用",
-    "address": "台北市敦化北路201號台塑大樓3樓502室",
+    "title1": "Global Network",
+    "title2": "Products Information",
+    "title3": "Contact Information",
+    "title4": "Related Links",
+    "medical": "Medical Aids",
+    "outdoor": "Outdoor Leisure",
+    "sport": "Sporting Products",
+    "functional": "Functional Application",
+    "address": "Rm. 502, 3F., No.201, Dunhua N. Rd., Songshan Dist.,Taipei City 105076, Taiwan (R.O.C.)",
+    "plastics": "FPG Official Website",
+    "media": "Media Center",
     "copyright": "Copyright © 2022 南亞塑膠工業股份有限公司 All Rights Reserved.",
     "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
   },
   "home": {
     "youtube": "https://www.youtube.com/embed/GI96FeJ_VX4",
     "application": {
-      "title": "TPU應用",
+      "title": "TPU Application",
       "item": [
         {
-          "name": "醫療輔器",
+          "name": "Medical Aids",
           "link": "./medical.html",
           "txt": [
             "Alternate TPU pipe strips",
@@ -44,7 +46,7 @@
           ]
         },
         {
-          "name": "戶外休閒",
+          "name": "Outdoor leisure",
           "link": "./outdoor.html",
           "txt": [
             "High frequency waterproof bag",
@@ -56,7 +58,7 @@
           ]
         },
         {
-          "name": "運動用品",
+          "name": "Sporting Products",
           "link": "./sport.html",
           "txt": [
             "Reinforcing material for shoe eyelets",
@@ -68,14 +70,14 @@
           ]
         },
         {
-          "name": "機能運用",
+          "name": "Functional Application",
           "link": "./functional.html",
           "txt": ["Anti-penetration oil barrier", "Clip-net anti-puncture film", "Composite cloth function", "Scratch resistant film fabric"]
         }
       ]
     },
     "product": {
-      "title": "產品資訊"
+      "title": "Products Information"
     },
     "case": {
       "title": "Case introduction",
@@ -83,22 +85,22 @@
         {
           "name": "Decompression air cushion",
           "txt": "Nan Ya TPU synthetic leather can withstand continuous inflation and degassing cycles without air leakage, providing effective alternating decompression.",
-          "btn": "了解更多"
+          "btn": "MORE"
         },
         {
           "name": "TPU bath bed",
           "txt": "Excellent washing resistance,unique anti-slip texture and skin-friendly material.",
-          "btn": "了解更多"
+          "btn": "MORE"
         },
         {
           "name": "The best choice for popular collocation and easy processing.",
           "txt": "TPU film and hot melt material which easily hot press with fabric is visually simple, popular, and lightweight.",
-          "btn": ">>了解更多"
+          "btn": ">>MORE"
         },
         {
           "name": "Transfer bed cloth",
           "txt": "Special coating and TPU coating enhance slippery movement and easy cleaning.",
-          "btn": ">>了解更多"
+          "btn": ">>MORE"
         }
       ]
     }
@@ -108,7 +110,7 @@
       "slogan": "Integrated Medical Solutions"
     },
     "carousel": {
-      "title": "醫療輔器",
+      "title": "Medical Aids",
       "category": [
         "Alternate TPU pipe strips",
         "Inflatable TPU aids",
@@ -142,10 +144,10 @@
   },
   "outdoor": {
     "banner": {
-      "slogan": "戶外休閒"
+      "slogan": "Outdoor Leisure"
     },
     "carousel": {
-      "title": "戶外休閒",
+      "title": "Outdoor Leisure",
       "category": [
         "High frequency waterproof bag",
         "Outdoor leisure",
@@ -175,10 +177,10 @@
   },
   "sport": {
     "banner": {
-      "slogan": "運動用品"
+      "slogan": "Sporting Products"
     },
     "carousel": {
-      "title": "運動用品",
+      "title": "Sporting Products",
       "category": [
         "Reinforcing material for shoe eyelets",
         "Heel support material",
@@ -205,10 +207,10 @@
   },
   "functional": {
     "banner": {
-      "slogan": "機能應用"
+      "slogan": "Functional Application"
     },
     "carousel": {
-      "title": "機能應用",
+      "title": "Functional Application",
       "category": ["Anti-penetration oil barrier", "Clip-net anti-puncture film", "Composite cloth function", "Scratch resistant film fabric"]
     },
     "feature": {
@@ -231,7 +233,7 @@
   },
   "product": {
     "banner": {
-      "slogan": "產品資訊"
+      "slogan": "Products Information"
     },
     "information": {
       "item": [
@@ -290,9 +292,9 @@
   },
   "contact": {
     "banner": {
-      "slogan": "聯絡我們",
-      "txt1": "如果您對南亞公司有任何的建議或批評，非常歡迎來信指教，",
-      "txt2": "我們將會用最快的速度回應給您"
+      "slogan": "Contact Us",
+      "txt1": "If there's any advice or suggestion, welcome to email or call us.",
+      "txt2": "We're willing to respond soon and appreciate your feedbacks."
     },
     "info": {
       "person": "聯絡人：黃𣫙守(Ben Huang)",
@@ -304,8 +306,8 @@
       "address": "地址:台北市敦化北路201號3樓502室"
     },
     "form": {
-      "title": "聯絡我們",
-      "remind": "如果您對南亞公司有任何的建議或批評，我們非常歡迎您能來信指教，或致電客服專線，我們將用心聆聽，並以最快的速度回應給您，謝謝",
+      "title": "Contact Us",
+      "remind": "If there's any advice or suggestion, welcome to email or call us.We're willing to respond soon and appreciate your feedbacks.",
       "nature": "選擇聯絡性質",
       "name": "姓名",
       "namePlaceholder": "請輸入您的姓名",
@@ -318,23 +320,23 @@
       "message": "您的留言",
       "messagePlaceholder": "您想反應的狀況，建議，或諮詢事項",
       "verificationCode": "驗證碼",
-      "submit": "送出",
+      "submit": "Send",
       "emailSelect": [
         {
           "id": 1,
-          "name": "醫療輔器"
+          "name": "Medical Aids"
         },{
           "id": 2,
-          "name": "戶外休閒"
+          "name": "Outdoor Leisure"
         },{
           "id": 3,
-          "name": "運動用品"
+          "name": "Sporting Products"
         },{
           "id": 4,
-          "name": "機能應用"
+          "name": "Functional Application"
         },{
           "id": 5,
-          "name": "其他"
+          "name": "Other"
         }
       ]
     }

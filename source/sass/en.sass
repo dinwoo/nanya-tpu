@@ -5,15 +5,16 @@ html.en-style
   +rwd(1520px)
     padding-top: 74px
   header
-		.wrapper
-			max-width: 1680px
-			.main
-				width: calc(100% - 420px)
-				ul.main-menu
-					li.main-item
-						padding: 32.5px 10px
-			.lang
-				width: 190px
+		+rwd2(1521px)
+			.wrapper
+				max-width: 1680px
+				.main
+					width: calc(100% - 420px)
+					ul.main-menu
+						li.main-item
+							padding: 32.5px 10px
+				.lang
+					width: 190px
 		+rwd(1520px)
 			border-bottom: 4px solid $blue001
 			.wrapper

@@ -25,8 +25,8 @@
     "address": "Rm. 502, 3F., No.201, Dunhua N. Rd., Songshan Dist.,Taipei City 105076, Taiwan (R.O.C.)",
     "plastics": "FPG Official Website",
     "media": "Media Center",
-    "copyright": "Copyright © 2022 南亞塑膠工業股份有限公司 All Rights Reserved.",
-    "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
+    "copyright": "Copyright © 2022 NAN YA PLASTICS CORPORATION All Rights Reserved.",
+    "remind": "Claim: All materials contained in the website, including its copyrights, patents, trademarks and other derivatives are the intellectual property of Formosa Plastics Group (FPG). Without prior written consent by FPG, any reproduction, modification or regarding any part of the above products, service, information and materials is illegal and strictly prohibited."
   },
   "home": {
     "youtube": "https://www.youtube.com/embed/GI96FeJ_VX4",
@@ -46,7 +46,7 @@
           ]
         },
         {
-          "name": "Outdoor leisure",
+          "name": "Outdoor Leisure",
           "link": "./outdoor.html",
           "txt": [
             "High frequency waterproof bag",

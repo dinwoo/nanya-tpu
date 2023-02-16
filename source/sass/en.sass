@@ -12,7 +12,9 @@ html.en-style
 					width: calc(100% - 420px)
 					ul.main-menu
 						li.main-item
-							padding: 32.5px 10px
+							padding: 32.5px 10pxauto
+							ul.sub-menu
+								width: 676px
 				.lang
 					width: 190px
 		+rwd(1520px)
@@ -159,7 +161,6 @@ html.en-style
 						&:nth-child(3)
 							width: 16px
 							transform: translate(-2px,5px)
-
   section.application
     .wrapper
       .box
@@ -177,3 +178,18 @@ html.en-style
             .box
               .item
                 width: calc(100% / 2)
+
+
+html.en-style
+	article
+		section.application .wrapper .box .item .info .mask .txt
+			font-size: 0.7rem
+		section.case
+			.wrapper
+				.container
+					.item
+						.left
+							.name
+								font-size: 0.8rem
+							.txt
+								font-size: 0.6rem

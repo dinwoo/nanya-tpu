@@ -80,11 +80,11 @@
       "title": "Products Information"
     },
     "case": {
-      "title": "Case introduction",
+      "title": "Case Introduction",
       "item": [
         {
           "name": "Decompression air cushion",
-          "txt": "Nan Ya TPU synthetic leather can withstand continuous inflation and degassing cycles without air leakage, providing effective alternating decompression.",
+          "txt": "Nan Ya TPU synthetic leather can withstand continuous inflation and deflation cycles without leaking, providing effective alternate decompression effects for the product.",
           "btn": "MORE"
         },
         {
@@ -93,7 +93,7 @@
           "btn": "MORE"
         },
         {
-          "name": "The best choice for popular collocation and easy processing.",
+          "name": "The best choice for popular collocation and easy processing",
           "txt": "TPU film and hot melt material which easily hot press with fabric is visually simple, popular, and lightweight.",
           "btn": ">>MORE"
         },
@@ -246,14 +246,14 @@
           "txt": "The pioneer leader in the integration of materials and processing, grasping the new trends of product, Nan Ya TPU has cooperated with professional R&D teams to carry out in-depth research on smart wear, high moisture permeability, and high barrier to human body contact. Your participation is welcome to inject innovation into product development and new opportunities!"
         },
         {
-          "title": "Processing application",
+          "title": "Processing Application",
           "txt": "With many processing processes, non-toxic high-frequency and hot-press processing, reducing sewing to improve batch processing economy, excellent waterproof effect, uniform and firm air-tight, enhanced durability, and other characteristics. The printing process can pass through the film material, a high scratch-resistant film protection effect, effectively protecting the printing layer, and is the first choice for the alternative material of the film material."
         }
       ],
       "btn": ">>Specification"
     },
     "carousel": {
-      "title": "Use combinations",
+      "title": "Use Combinations",
       "txt": "Diversified and complex technologies provide you with exclusive embossing options with multiple levels of vision, functional weather resistance and a variety of texture presentations. Nan Ya's one-stop solution is perfectly achieved, allowing you to easily and conveniently obtain it instantly."
     },
     "certification": {
@@ -277,16 +277,16 @@
         "title": "High Frequency Processing",
         "txt": "Non-toxic and with no additional additives, Nan Ya pure TPU, is the first choice for high-frequency medical use, with good tensile and inflatable strength and rigidity, providing reliable, simple, and modularized products for various medical inflatable products, outdoor air cushion products, leisure composite, and waterproof products. The best choice for mass production.",
         "subTitle": "Currently applied to",
-        "item": ["Medical bed tube", "Massage rehabilitation airbag", "Shoe Material", "Blood pressure pulse bag", "Water-proof bag"]
+        "item": ["Medical bed tube", "Massage rehabilitation airbag", "Blood pressure pulse bag", "Water-proof bag", "Shoe Material"]
       },
       {
-        "title": "Hot press processing"
+        "title": "Hot Press Processing"
       },
       {
-        "title": "Printing processing",
+        "title": "Printing Processing",
         "txt": "Through embossed transfer, it can provide protection for the printing layer to prevent abrasion and visual multi-level presentation, such as vertical and horizontal printing patterns, spun carbon fiber weaving, lenticular patterns, and plain printing on the back to ensure printing color fastness and resolution.",
         "subTitle": "Currently applied to",
-        "item": ["Rail vehicle floor", "Wearing carrier", "Laundry labels for clothes"]
+        "item": ["Rail vehicle floor", "Laundry labels for clothes", "Wearing carrier"]
       }
     ]
   },

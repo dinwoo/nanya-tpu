@@ -5,6 +5,19 @@
 article#case
   section.banner
     background-image: url(../images/case_banner.jpg)
+    .content
+      width: 100%
+      color: $white001
+      text-align: center
+      +pstc5
+      .slogan
+        margin-bottom: 20px
+        font-size: 3rem
+    +rwd(768px)
+      .content
+        .slogan
+          margin-bottom: 10px
+          font-size: 1.625rem
   section.case-section
     padding: 60px 0
     &:nth-child(3)
@@ -43,7 +56,7 @@ article#case
               width: calc(100% / 3)
               font-size: 1.2rem
               +dib
-    +rwd(768px)
+    +rwd(1200px)
       padding: 30px 0
       .wrapper
         h2

@@ -16,6 +16,8 @@ block js
 block body
   article#case
     section.banner
+      .content
+        .slogan #{$t.case.banner.slogan}
     each item, index in $t.case.content
       section.case-section
         .wrapper

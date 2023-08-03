@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "gulp",
     "init": "sh init.sh",
-    "build": "gulp build --env production",
-    "build-gh-page": "sh deploy.sh"
+    "build": "gulp build --env production"
   },
   "author": "",
   "license": "ISC",

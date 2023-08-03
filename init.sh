@@ -2,6 +2,8 @@ set -e
 
 npm install gulp
 
-npm install bower
+npm install
 
-bower install
+# npm install bower
+
+# bower install
